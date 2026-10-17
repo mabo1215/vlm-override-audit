@@ -1,0 +1,32 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{System B: the selected rules of the preregistered pairwise score
+(primary) and listwise score (secondary) on the certification and
+confirmation sets.  In parentheses: certification/confirmation images.
+$m/h/k$: switches, helps, harms; $L$ and $U$: exact one-sided 95\% lower and
+upper bounds on harm among switches.  Each benchmark's thresholds are
+percentiles of its own training switch scores (\Cref{sec:system-b}).\label{tab:sysb-scores}}
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}llrrrrrrrrrrrl@{}}
+\toprule
+& & & \multicolumn{5}{c}{Certification set} & \multicolumn{5}{c}{Confirmation set} & \\
+\cmidrule(lr){4-8}\cmidrule(lr){9-13}
+Benchmark & Score & $\tau$ & $m$ & $h$ & $k$ & $L$ & $U$ & $m$ & $h$ & $k$ & $k/m$ & $L$ & Verdict \\
+\midrule
+RefCOCO+ (1{,}325/1{,}443) & pairwise & 1.51 & 19 & 3 & 9 & 27.4\% & 68.0\% & 30 & 5 & 13 & 43.3\% & 27.9\% & not certified \\
+ & listwise & 2.91 & 52 & 2 & 24 & 34.2\% & 58.4\% & 55 & 4 & 32 & 58.2\% & 46.2\% & not certified \\
+\midrule
+RefCOCOg (1{,}361/1{,}463) & pairwise & 1.81 & 25 & 3 & 12 & 30.5\% & 65.9\% & 19 & 4 & 11 & 57.9\% & 36.8\% & not certified \\
+ & listwise & 3.12 & 48 & 5 & 19 & 27.7\% & 52.5\% & 60 & 8 & 23 & 38.3\% & 27.8\% & not certified \\
+\midrule
+RefCOCO (1{,}342/1{,}444) & pairwise & 0.77 & 49 & 8 & 24 & 36.5\% & 61.5\% & 47 & 5 & 22 & 46.8\% & 34.2\% & not certified \\
+ & listwise & 2.81 & 61 & 6 & 28 & 34.9\% & 57.2\% & 35 & 3 & 21 & 60.0\% & 44.7\% & not certified \\
+\midrule
+RefCLEF (3{,}000/2{,}999) & pairwise & 3.61 & 164 & 103 & 5 & 1.2\% & 6.3\% & 191 & 118 & 8 & 4.2\% & 2.1\% & not certified \\
+ & listwise & 3.44 & 527 & 151 & 84 & 13.4\% & 18.8\% & 535 & 153 & 72 & 13.5\% & 11.1\% & not certified \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

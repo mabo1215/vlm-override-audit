@@ -1,0 +1,105 @@
+{
+  "arm": "G1",
+  "by_benchmark_and_set": {
+    "RefCOCO": {
+      "certify": {
+        "listwise_switches": 393,
+        "mean_candidates": 5.624,
+        "no_default": 0,
+        "pairwise_switches": 212,
+        "records": 1342
+      },
+      "confirm": {
+        "listwise_switches": 416,
+        "mean_candidates": 5.647,
+        "no_default": 0,
+        "pairwise_switches": 200,
+        "records": 1444
+      },
+      "select": {
+        "listwise_switches": 406,
+        "mean_candidates": 5.657,
+        "no_default": 0,
+        "pairwise_switches": 217,
+        "records": 1342
+      },
+      "train": {
+        "listwise_switches": 102,
+        "mean_candidates": 5.619,
+        "no_default": 0,
+        "pairwise_switches": 53,
+        "records": 299
+      }
+    },
+    "RefCOCO+": {
+      "certify": {
+        "listwise_switches": 433,
+        "mean_candidates": 5.648,
+        "no_default": 0,
+        "pairwise_switches": 269,
+        "records": 1325
+      },
+      "confirm": {
+        "listwise_switches": 469,
+        "mean_candidates": 5.694,
+        "no_default": 0,
+        "pairwise_switches": 269,
+        "records": 1443
+      },
+      "select": {
+        "listwise_switches": 471,
+        "mean_candidates": 5.689,
+        "no_default": 0,
+        "pairwise_switches": 299,
+        "records": 1325
+      },
+      "train": {
+        "listwise_switches": 86,
+        "mean_candidates": 5.719,
+        "no_default": 0,
+        "pairwise_switches": 55,
+        "records": 295
+      }
+    },
+    "RefCOCOg": {
+      "certify": {
+        "listwise_switches": 400,
+        "mean_candidates": 5.735,
+        "no_default": 0,
+        "pairwise_switches": 242,
+        "records": 1361
+      },
+      "confirm": {
+        "listwise_switches": 437,
+        "mean_candidates": 5.693,
+        "no_default": 1,
+        "pairwise_switches": 277,
+        "records": 1463
+      },
+      "select": {
+        "listwise_switches": 390,
+        "mean_candidates": 5.698,
+        "no_default": 0,
+        "pairwise_switches": 262,
+        "records": 1361
+      },
+      "train": {
+        "listwise_switches": 82,
+        "mean_candidates": 5.768,
+        "no_default": 0,
+        "pairwise_switches": 44,
+        "records": 302
+      }
+    }
+  },
+  "errors": 0,
+  "generation_sha256": {
+    "g1_shard0of2.jsonl": "3d0a2ed3a001aacf2535d6c589628edae30d27a2a5666c78f7aeb62e76d7e87a",
+    "g1_shard1of2.jsonl": "4dd39c8c41d8a588810c4d438a951d33aece26fb934f5a69a0b9f492937d48b0"
+  },
+  "mean_seconds_per_record": 8.143,
+  "peak_memory_mb_max": 19051,
+  "prefix_cached_all": true,
+  "records": 13302,
+  "status": "generation complete, label-free summary (no ground truth read)"
+}

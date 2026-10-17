@@ -1,0 +1,36 @@
+\begin{table}[H]
+\caption{System B: all declared pairwise thresholds on the selection sets
+(the smallest is the tie tolerance).  Bold: the selected
+rule.\label{tab:sysb-trace}}
+\centering
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Benchmark & $\tau$ & Switches & Helps & Harms & Accuracy change \\
+\midrule
+RefCOCO+ & $10^{-6}$ & 299 & 18 & 142 & $-9.36$\pp \\
+ & $0.26$ & 198 & 13 & 103 & $-6.79$\pp \\
+ & $0.42$ & 152 & 12 & 79 & $-5.06$\pp \\
+ & $0.72$ & 102 & 9 & 52 & $-3.25$\pp \\
+ & $\mathbf{1.51}$ & \textbf{29} & \textbf{4} & \textbf{12} & $\mathbf{-0.60}$\pp \\
+\midrule
+RefCOCOg & $10^{-6}$ & 262 & 14 & 133 & $-8.74$\pp \\
+ & $0.20$ & 203 & 13 & 109 & $-7.05$\pp \\
+ & $0.55$ & 123 & 10 & 70 & $-4.41$\pp \\
+ & $1.08$ & 58 & 8 & 31 & $-1.69$\pp \\
+ & $\mathbf{1.81}$ & \textbf{27} & \textbf{6} & \textbf{17} & $\mathbf{-0.81}$\pp \\
+\midrule
+RefCOCO & $10^{-6}$ & 217 & 10 & 92 & $-6.11$\pp \\
+ & $0.16$ & 153 & 10 & 73 & $-4.69$\pp \\
+ & $0.29$ & 119 & 9 & 60 & $-3.80$\pp \\
+ & $0.58$ & 75 & 7 & 43 & $-2.68$\pp \\
+ & $\mathbf{0.77}$ & \textbf{55} & \textbf{5} & \textbf{34} & $\mathbf{-2.16}$\pp \\
+\midrule
+RefCLEF & $10^{-6}$ & 1{,}566 & 273 & 257 & $+0.53$\pp \\
+ & $0.47$ & 1{,}161 & 243 & 167 & $+2.53$\pp \\
+ & $1.03$ & 786 & 204 & 100 & $+3.47$\pp \\
+ & $2.09$ & 419 & 155 & 38 & $+3.90$\pp \\
+ & $\mathbf{3.61}$ & \textbf{185} & \textbf{100} & \textbf{7} & $\mathbf{+3.10}$\pp \\
+\bottomrule
+\end{tabular}
+\end{table}

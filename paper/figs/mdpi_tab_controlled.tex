@@ -1,0 +1,30 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Controlled verifier study (2,000 runs per cell).  Each cell gives the share of
+runs that deploy a rule, followed in parentheses by the share that deploy a truly unsafe
+rule (true harm among switches above 5\%), for RefCOCO+ / RefCOCOg / RefCOCO.\label{tab:controlled}}
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llllll@{}}
+\toprule
+$f$ & Procedure & recall 80\% & recall 90\% & recall 95\% & recall 100\% \\
+\midrule
+0\% & No bound & 76/74/96 (6/18/0) & 96/96/99 (0/0/0) & 100/100/100 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Same data, no correction & 5/5/37 (0/2/0) & 42/46/78 (0/0/0) & 82/88/95 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Split audit & 2/2/16 (0/0/0) & 15/16/39 (0/0/0) & 37/41/60 (0/0/0) & 100/100/86 (0/0/0) \\
+ & LTT, pooled & 1/0/9 (0/0/0) & 12/16/36 (0/0/0) & 48/58/63 (0/0/0) & 100/100/100 (0/0/0) \\
+\midrule
+10\% & No bound & 73/67/94 (73/67/0) & 94/94/99 (0/0/0) & 99/100/100 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Same data, no correction & 4/2/26 (4/2/0) & 34/34/66 (0/0/0) & 74/80/87 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Split audit & 2/1/10 (2/1/0) & 12/10/24 (0/0/0) & 33/35/36 (0/0/0) & 90/99/53 (0/0/0) \\
+ & LTT, pooled & 0/0/5 (0/0/0) & 9/8/20 (0/0/0) & 35/40/45 (0/0/0) & 100/100/100 (0/0/0) \\
+\midrule
+30\% & No bound & 56/57/86 (56/57/0) & 89/89/97 (0/0/0) & 97/98/100 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Same data, no correction & 1/1/10 (1/1/0) & 15/16/39 (0/0/0) & 47/51/68 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Split audit & 0/0/0 (0/0/0) & 2/6/1 (0/0/0) & 6/17/1 (0/0/0) & 16/58/2 (0/0/0) \\
+ & LTT, pooled & 0/0/2 (0/0/0) & 2/2/10 (0/0/0) & 13/12/21 (0/0/0) & 93/100/46 (0/0/0) \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

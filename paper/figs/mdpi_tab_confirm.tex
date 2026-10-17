@@ -1,0 +1,24 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Selected rules on the certification and confirmation sets.  $L$ and
+$U$ are exact one-sided 95\% lower and upper bounds on harm among switches;
+$U$ on the certification set decides certification, and the confirmation
+values are descriptive.  A lower bound above 5\% means that the rule's true
+harm rate exceeds the limit, so more test data would not lead to
+certification.\label{tab:confirm}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrrrrrrrr@{}}
+\toprule
+& \multicolumn{6}{c}{Certification set} & \multicolumn{6}{c}{Confirmation set} \\
+\cmidrule(lr){2-7}\cmidrule(l){8-13}
+Benchmark & $n$ & $m$ & $h$ & $k$ & $L$ & $U$ & $n$ & $m$ & $h$ & $k$ & $k/m$ & $L$ \\
+\midrule
+RefCOCO+ ($\tau=0.4$) & 1{,}325 & 93 & 20 & 19 & 13.8\% & 28.5\% & 1{,}443 & 108 & 35 & 26 & 24.1\% & 17.4\% \\
+RefCOCOg ($\tau=0.6$) & 1{,}361 & 59 & 19 & 10 & 9.5\% & 27.1\% & 1{,}463 & 85 & 30 & 21 & 24.7\% & 17.2\% \\
+RefCOCO ($\tau=0.4$) & 1{,}342 & 76 & 17 & 6 & 3.5\% & 15.0\% & 1{,}444 & 82 & 21 & 11 & 13.4\% & 7.7\% \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

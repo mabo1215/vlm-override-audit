@@ -1,0 +1,22 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Mean IoU of the default and alternative boxes on the held-out sets.
+``All $\Delta$'' averages the alternative-minus-default IoU over all images;
+``switched $\Delta$'' averages it over the images that the selected rule
+switches.\label{tab:continuous-iou}}
+\centering
+\small
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Benchmark & Set & $n$ & Switched & Mean IoU($b$) & Mean IoU($c$) & All $\Delta$ / switched $\Delta$ \\
+\midrule
+RefCOCO+ & certification & 1{,}325 & 93 & 0.765 & 0.782 & $+0.017$ / $+0.077$ \\
+ & confirmation & 1{,}443 & 108 & 0.761 & 0.785 & $+0.024$ / $+0.152$ \\
+RefCOCOg & certification & 1{,}361 & 59 & 0.780 & 0.800 & $+0.019$ / $+0.143$ \\
+ & confirmation & 1{,}463 & 85 & 0.771 & 0.785 & $+0.014$ / $+0.121$ \\
+RefCOCO & certification & 1{,}342 & 76 & 0.814 & 0.836 & $+0.022$ / $+0.183$ \\
+ & confirmation & 1{,}444 & 82 & 0.815 & 0.832 & $+0.017$ / $+0.121$ \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

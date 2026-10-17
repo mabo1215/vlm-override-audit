@@ -1,0 +1,33 @@
+{
+  "file_mismatches": 0,
+  "images": 4487,
+  "iou_checked_refs": 4699,
+  "iou_max_abs_difference": 1.1102230246251565e-16,
+  "iou_tolerance": 1e-09,
+  "log_errors_without_id": 1,
+  "log_files": [
+    "detector_expr_structured_w0.75_calibration_shard0_scores.json",
+    "detector_expr_structured_w0.75_calibration_shard1_scores.json",
+    "detector_expr_structured_w0.75_calibration_shard2_scores.json",
+    "detector_expr_structured_w0.75_calibration_shard3_scores.json",
+    "detector_expr_structured_w0.75_calibration_shard4_scores.json",
+    "detector_expr_structured_w0.75_confirmation_shard0_scores.json",
+    "detector_expr_structured_w0.75_confirmation_shard1_scores.json",
+    "detector_expr_structured_w0.75_confirmation_shard2_scores.json",
+    "detector_expr_structured_w0.75_calibration_shard0.json",
+    "detector_expr_structured_w0.75_calibration_shard1.json",
+    "detector_expr_structured_w0.75_calibration_shard2.json",
+    "detector_expr_structured_w0.75_calibration_shard3.json",
+    "detector_expr_structured_w0.75_calibration_shard4.json",
+    "detector_expr_structured_w0.75_confirmation_shard0.json",
+    "detector_expr_structured_w0.75_confirmation_shard1.json",
+    "detector_expr_structured_w0.75_confirmation_shard2.json"
+  ],
+  "output_sha256": "d3d2b0f46d089a81f98d0414d4b9c7cd701fa3c4ed6b1209b498bada90678fe1",
+  "public_parquets": {
+    "refcocog_train_jxu124.parquet": "6ab9631fb9353e94f440832f272ab15bae5726b62168e930a922aa687ed62b96"
+  },
+  "refs": 4699,
+  "scored_refs": 4699,
+  "text_mismatches": 0
+}

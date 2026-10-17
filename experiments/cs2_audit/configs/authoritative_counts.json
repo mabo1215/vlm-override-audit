@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "sampling_unit": "one preselected expression per image",
+  "benchmarks": {
+    "RefCOCO+": {
+      "counts": {
+        "train": 295,
+        "select": 1325,
+        "certify": 1325,
+        "confirm": 1443
+      },
+      "audit_summary": "experiments/cs2_audit/results/refcocoplus_scaleup_20260822/reduced_audit_20260822/audit_summary.json",
+      "paper_sentence": "train/select/certify/confirm counts $295/1325/1325/1443$"
+    },
+    "RefCOCOg": {
+      "counts": {
+        "train": 302,
+        "select": 1361,
+        "certify": 1361,
+        "confirm": 1463
+      },
+      "audit_summary": "experiments/cs2_audit/results/refcocog_scaleup_20260822/results_refcocog/audit_seed20270822/audit_summary.json",
+      "paper_sentence": "train/select/certify/confirm counts $302/1361/1361/1463$"
+    },
+    "RefCOCO": {
+      "counts": {
+        "train": 299,
+        "select": 1342,
+        "certify": 1342,
+        "confirm": 1444
+      },
+      "audit_summary": "experiments/cs2_audit/results/refcoco_scaleup_20260823/results_refcoco/audit_seed20270822/audit_summary.json",
+      "paper_sentence": "train/select/certify/confirm counts $299/1342/1342/1444$"
+    }
+  },
+  "forbidden_stale_count_strings": [
+    "317/1451/1430/1500"
+  ]
+}

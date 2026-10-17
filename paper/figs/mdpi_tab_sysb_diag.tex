@@ -1,0 +1,26 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{System B diagnostics.  AUROC: help versus harm of the switch
+score (helpful/harmful opportunities in parentheses).  Decisive share and
+harmful share of decisive switches (\Cref{eq:decomp}) are for the selected
+rule on the selection set.  Always switch: harm among all proposed switches
+on the certification set (their number in parentheses) and its descriptive
+bound $U$.  Power: exact probability that the selected rule is certified at
+its observed certification size and harm rate.\label{tab:sysb-diag}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+& \multicolumn{2}{c}{AUROC} & \multicolumn{2}{c}{Selected rule (selection set)} & \multicolumn{2}{c}{Always switch (cert.)} & \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Benchmark & Certification & Selection & Decisive & Harmful of decisive & $k/m$ & $U$ & Power \\
+\midrule
+RefCOCO+ & 0.67 (15/133) & 0.56 & 55\% & 75\% & 49.4\% (269) & 54.6\% & 0.00 \\
+RefCOCOg & 0.71 (15/117) & 0.71 & 85\% & 74\% & 48.3\% (242) & 53.8\% & 0.00 \\
+RefCOCO & 0.63 (17/79) & 0.68 & 71\% & 87\% & 37.3\% (212) & 43.1\% & 0.00 \\
+RefCLEF & 0.80 (283/250) & 0.78 & 58\% & 7\% & 16.3\% (1{,}537) & 17.9\% & 0.26 \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

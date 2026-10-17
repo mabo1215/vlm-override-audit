@@ -1,0 +1,62 @@
+{
+  "RefCOCO": {
+    "by_set": {
+      "certify": 1430,
+      "confirm": 1500,
+      "select": 1451,
+      "train": 317
+    },
+    "candidate_sets_reproduce_records": true,
+    "expressions": 4698,
+    "files": {
+      "RefCOCO_candidates.jsonl.gz": "aef85ca7b57354745750516a00928018cca8dbe402cb383f01302251990dc884",
+      "RefCOCO_expressions.csv.gz": "6ab79f20120c55cee258cbc07f5f59010528a32a8b22a7997f481a14ca15272e"
+    },
+    "images": 4427,
+    "legacy_reduction_reproduces_registry": {
+      "20270822": true,
+      "20270823": true,
+      "20270824": true
+    }
+  },
+  "RefCOCO+": {
+    "by_set": {
+      "certify": 1442,
+      "confirm": 1500,
+      "select": 1436,
+      "train": 322
+    },
+    "candidate_sets_reproduce_records": true,
+    "expressions": 4700,
+    "files": {
+      "RefCOCOplus_candidates.jsonl.gz": "6ef29efd105f88701c997b20c2c5582d85d7e591e2bf0d29b1e50c70aa782ae8",
+      "RefCOCOplus_expressions.csv.gz": "2fd957ae0dbcd4b5406b9b1687e61e639a544448dd6676cb5e26c2199bf87c0e"
+    },
+    "images": 4388,
+    "legacy_reduction_reproduces_registry": {
+      "20270822": true,
+      "20270823": true,
+      "20270824": true
+    }
+  },
+  "RefCOCOg": {
+    "by_set": {
+      "certify": 1452,
+      "confirm": 1500,
+      "select": 1425,
+      "train": 322
+    },
+    "candidate_sets_reproduce_records": true,
+    "expressions": 4699,
+    "files": {
+      "RefCOCOg_candidates.jsonl.gz": "bcb4683bb09a1a56eaf41fec6e2dc282609d800d21f951f4a4c88398d9fa62c1",
+      "RefCOCOg_expressions.csv.gz": "90f3611ea573bf97e588cd16a0ea7dd24595b90032a1de4a80a27ed3d4560a3f"
+    },
+    "images": 4487,
+    "legacy_reduction_reproduces_registry": {
+      "20270822": true,
+      "20270823": true,
+      "20270824": true
+    }
+  }
+}

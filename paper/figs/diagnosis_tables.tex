@@ -1,0 +1,83 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Decomposition of harm among switches on the selection sets for all six
+declared thresholds.  Decisive switches change correctness; the harm rate is the
+decisive share times the harmful share of decisive switches.}
+\label{tab:decomp-full}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+& & & & Decisive & Harmful & Harm \\
+Bench. & $\tau$ & $m$ & $h/k$ & share & of decisive & rate \\
+\midrule
+RefCOCO+ & 0.4 & 86 & 28/12 & 47\% & 30\% & 14.0\% \\
+ & 0.5 & 66 & 26/11 & 56\% & 30\% & 16.7\% \\
+ & 0.6 & 52 & 22/11 & 63\% & 33\% & 21.2\% \\
+ & 0.7 & 42 & 19/11 & 71\% & 37\% & 26.2\% \\
+ & 0.8 & 36 & 16/9 & 69\% & 36\% & 25.0\% \\
+ & 0.9 & 30 & 13/9 & 73\% & 41\% & 30.0\% \\
+\midrule
+RefCOCOg & 0.4 & 102 & 25/22 & 46\% & 47\% & 21.6\% \\
+ & 0.5 & 78 & 24/17 & 53\% & 41\% & 21.8\% \\
+ & 0.6 & 62 & 23/15 & 61\% & 39\% & 24.2\% \\
+ & 0.7 & 50 & 20/14 & 68\% & 41\% & 28.0\% \\
+ & 0.8 & 46 & 17/14 & 67\% & 45\% & 30.4\% \\
+ & 0.9 & 37 & 13/11 & 65\% & 46\% & 29.7\% \\
+\midrule
+RefCOCO & 0.4 & 68 & 16/7 & 34\% & 30\% & 10.3\% \\
+ & 0.5 & 44 & 14/7 & 48\% & 33\% & 15.9\% \\
+ & 0.6 & 34 & 11/6 & 50\% & 35\% & 17.6\% \\
+ & 0.7 & 27 & 8/6 & 52\% & 43\% & 22.2\% \\
+ & 0.8 & 24 & 6/6 & 50\% & 50\% & 25.0\% \\
+ & 0.9 & 17 & 4/5 & 53\% & 56\% & 29.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\caption{Smallest verifier recall (share of harmful switches vetoed) at which at
+least one declared threshold is truly safe, for three false-veto rates $f$.}
+\label{tab:min-recall}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Benchmark & $f=0\%$ & $f=10\%$ & $f=30\%$ \\
+\midrule
+RefCOCO+ & 78.5\% & 80.5\% & 85.0\% \\
+RefCOCOg & 79.5\% & 81.5\% & 86.0\% \\
+RefCOCO & 56.0\% & 60.5\% & 69.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Controlled verifier study (2,000 runs per cell).  Each cell gives the share of
+runs that deploy a rule, followed in parentheses by the share that deploy a truly unsafe
+rule (true harm among switches above 5\%), for RefCOCO+ / RefCOCOg / RefCOCO.}
+\label{tab:controlled}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llllll@{}}
+\toprule
+$f$ & Procedure & recall 80\% & recall 90\% & recall 95\% & recall 100\% \\
+\midrule
+0\% & No bound & 76/74/96 (6/18/0) & 96/96/99 (0/0/0) & 100/100/100 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Same data, no correction & 5/5/37 (0/2/0) & 42/46/78 (0/0/0) & 82/88/95 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Split audit & 2/2/16 (0/0/0) & 15/16/39 (0/0/0) & 37/41/60 (0/0/0) & 100/100/86 (0/0/0) \\
+ & LTT, pooled & 1/0/9 (0/0/0) & 12/16/36 (0/0/0) & 48/58/63 (0/0/0) & 100/100/100 (0/0/0) \\
+\midrule
+10\% & No bound & 73/67/94 (73/67/0) & 94/94/99 (0/0/0) & 99/100/100 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Same data, no correction & 4/2/26 (4/2/0) & 34/34/66 (0/0/0) & 74/80/87 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Split audit & 2/1/10 (2/1/0) & 12/10/24 (0/0/0) & 33/35/36 (0/0/0) & 90/99/53 (0/0/0) \\
+ & LTT, pooled & 0/0/5 (0/0/0) & 9/8/20 (0/0/0) & 35/40/45 (0/0/0) & 100/100/100 (0/0/0) \\
+\midrule
+30\% & No bound & 56/57/86 (56/57/0) & 89/89/97 (0/0/0) & 97/98/100 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Same data, no correction & 1/1/10 (1/1/0) & 15/16/39 (0/0/0) & 47/51/68 (0/0/0) & 100/100/100 (0/0/0) \\
+ & Split audit & 0/0/0 (0/0/0) & 2/6/1 (0/0/0) & 6/17/1 (0/0/0) & 16/58/2 (0/0/0) \\
+ & LTT, pooled & 0/0/2 (0/0/0) & 2/2/10 (0/0/0) & 13/12/21 (0/0/0) & 93/100/46 (0/0/0) \\
+\bottomrule
+\end{tabular}
+\end{table*}

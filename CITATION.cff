@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or these records, please cite the paper."
+title: "vlm-override-audit: code and records for a harm audit of VLM overrides in visual grounding"
+type: software
+license: MIT
+repository-code: "https://github.com/mabo1215/vlm-override-audit"
+authors:
+  - family-names: Ma
+    given-names: Bo
+    orcid: "https://orcid.org/0000-0003-1076-3290"
+  - family-names: Yan
+    given-names: Wei Qi
+  - family-names: Wu
+    given-names: Jinsong
+preferred-citation:
+  type: article
+  title: "When May a Re-ranker Override a Vision-Language Model? A Harm Audit for Visual Grounding"
+  authors:
+    - family-names: Ma
+      given-names: Bo
+    - family-names: Yan
+      given-names: Wei Qi
+    - family-names: Wu
+      given-names: Jinsong
+  journal: "Applied Sciences"
+  year: 2026
+  notes: "Submitted"

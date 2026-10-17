@@ -1,0 +1,37 @@
+{
+  "arm": "G3 (RefCLEF)",
+  "by_set": {
+    "certify": {
+      "listwise_switches": 2014,
+      "no_default": 1,
+      "pairwise_switches": 1537,
+      "records": 3000
+    },
+    "confirm": {
+      "listwise_switches": 2026,
+      "no_default": 2,
+      "pairwise_switches": 1495,
+      "records": 2999
+    },
+    "select": {
+      "listwise_switches": 2040,
+      "no_default": 1,
+      "pairwise_switches": 1566,
+      "records": 3000
+    },
+    "train": {
+      "listwise_switches": 700,
+      "no_default": 0,
+      "pairwise_switches": 512,
+      "records": 1000
+    }
+  },
+  "errors": 0,
+  "generation_sha256": {
+    "g3_shard0of2.jsonl": "e1964f0fcebaa7382eb84925bb22454298725d1c3ac376a37cb9bb609f8a9504",
+    "g3_shard1of2.jsonl": "9196be006e9d59b65d938d9f06feab32202ed6e42c62e4fbb86f602ebe0037aa"
+  },
+  "mean_seconds_per_record": 8.706,
+  "records": 9999,
+  "status": "generation complete, label-free summary"
+}

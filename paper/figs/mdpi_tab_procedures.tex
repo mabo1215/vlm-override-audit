@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Four ways to decide whether to deploy a threshold, all with
+$\alpha=\delta=5\%$.  ``Real scores'': decision on the actual switch scores of
+all three benchmarks.  ``Unsafe'': worst share of runs, over all 99 controlled
+settings, that deploy a rule whose true harm exceeds 5\%.  The last three
+columns use a verifier with 10\% false vetoes that catches 90\% or 95\% of
+harmful switches, where safe rules exist: the share of runs that deploy a rule,
+and the mean accuracy change actually realized in percentage points, averaged
+over all runs (RefCOCO+/RefCOCOg/RefCOCO).\label{tab:procedures}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+& & & Deploys & \multicolumn{2}{c}{Realized gain (pp)} \\
+\cmidrule(l){5-6}
+Procedure & Real scores & Unsafe & at 95\% & at 90\% & at 95\% \\
+\midrule
+No bound (selection set) & no switch & 73.0\% & 99/100/100\% & +1.59/+1.63/+1.18 & +1.77/+1.83/+1.23 \\
+Same data, no correction & no switch & 3.9\% & 74/80/87\% & +0.56/+0.58/+0.79 & +1.31/+1.46/+1.07 \\
+Split audit (ours) & no switch & 1.6\% & 33/35/36\% & +0.21/+0.18/+0.29 & +0.60/+0.64/+0.44 \\
+LTT, pooled sets & no switch & 0.5\% & 35/40/45\% & +0.15/+0.13/+0.24 & +0.62/+0.73/+0.55 \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

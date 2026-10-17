@@ -1,0 +1,27 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Selected rule versus random proposals at the same switch count.
+``Proposals'': images with a proposed switch ($s>0$), from which the random
+rule draws.  Intervals are 95\% image-level bootstrap intervals (500
+resamples, rule frozen) of the selected-minus-random difference, in
+percentage points.  These intervals are descriptive and play no role in the
+certificate.\label{tab:matched-random}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrcrrc@{}}
+\toprule
+& & & \multicolumn{3}{c}{Harm among switches} & \multicolumn{3}{c}{Accuracy change} \\
+\cmidrule(lr){4-6}\cmidrule(l){7-9}
+Benchmark & Set & Proposals & Selected & Random & Difference & Selected & Random & Difference \\
+\midrule
+RefCOCO+ & certification & 452 & 20.4\% & 9.3\% & $[+4.7,+18.2]$ & $+0.08$\pp & $+0.05$\pp & $[-0.81,+0.73]$\pp \\
+ & confirmation & 471 & 24.1\% & 9.8\% & $[+8.0,+21.5]$ & $+0.62$\pp & $+0.33$\pp & $[-0.53,+1.07]$\pp \\
+RefCOCOg & certification & 490 & 16.9\% & 6.9\% & $[+1.2,+20.3]$ & $+0.66$\pp & $+0.12$\pp & $[-0.19,+1.25]$\pp \\
+ & confirmation & 543 & 24.7\% & 10.9\% & $[+6.6,+21.8]$ & $+0.62$\pp & $+0.06$\pp & $[-0.24,+1.33]$\pp \\
+RefCOCO & certification & 397 & 7.9\% & 3.8\% & $[-0.4,+9.2]$ & $+0.82$\pp & $+0.20$\pp & $[+0.11,+1.18]$\pp \\
+ & confirmation & 415 & 13.4\% & 4.3\% & $[+3.2,+15.2]$ & $+0.69$\pp & $+0.19$\pp & $[-0.12,+1.08]$\pp \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

@@ -1,0 +1,31 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{The audited pairwise score and the listwise score recorded by the same
+generator, on the same records (post hoc for the listwise score; not a
+certificate).  Passes: scoring forward passes per record.  $\tau$: threshold
+selected from the declared family; $m/h/k$: switches, helps and harms;
+$U$: one-sided 95\% upper bound.  AUROC: help versus harm on the certification
+set.  Matched: harm among the top-scoring switches on the certification set, as
+many as the selected pairwise rule makes.  Fine family: thresholds 0.05 to 0.95
+in steps of 0.05.  No rule is certified.\label{tab:listwise}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrrrrrrr@{}}
+\toprule
+& & & \multicolumn{4}{c}{Declared family} & & & \multicolumn{2}{c}{Fine family} \\
+\cmidrule(lr){4-7}\cmidrule(l){10-11}
+Benchmark & Score & Passes & $\tau$ & Certify $m/h/k$ & $U$ & Confirm $m/h/k$ & AUROC & Matched & $\tau$ & $U$ \\
+\midrule
+RefCOCO+ & Pairwise & 4.1 & 0.4 & 93/20/19 & 28.5\% & 108/35/26 & 0.55 & 20.4\% & 0.35 & 24.6\% \\
+ & Listwise & 1.7 & 0.9 & 8/4/1 & 47.1\% & 12/6/2 & 0.50 & 10.8\% & 0.90 & 47.1\% \\
+\midrule
+RefCOCOg & Pairwise & 5.8 & 0.6 & 59/19/10 & 27.1\% & 85/30/21 & 0.53 & 16.9\% & 0.60 & 27.1\% \\
+ & Listwise & 1.8 & 0.7 & 52/10/5 & 19.2\% & 57/11/4 & 0.62 & 8.5\% & 0.05 & 11.1\% \\
+\midrule
+RefCOCO & Pairwise & 3.1 & 0.4 & 76/17/6 & 15.0\% & 82/21/11 & 0.66 & 7.9\% & 0.05 & 5.2\% \\
+ & Listwise & 1.6 & 0.9 & 11/2/0 & 23.8\% & 21/1/0 & 0.64 & 3.9\% & 0.05 & 5.2\% \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

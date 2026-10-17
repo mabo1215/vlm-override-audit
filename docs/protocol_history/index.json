@@ -1,0 +1,56 @@
+[
+  {
+    "commit": "4acc101",
+    "committed": "2026-10-16T11:48:21+13:00",
+    "file": "system_b_protocol_v1@4acc101.json",
+    "sha256": "0a16abec8559dc19854a01bed031c54df4e8edbe74346a997a228aa5b237c48a"
+  },
+  {
+    "commit": "00f71e2",
+    "committed": "2026-10-17T03:28:08+13:00",
+    "file": "system_b_protocol_v1@00f71e2.json",
+    "sha256": "1c0af315397e42da888c68c4e499401dbc24ff4929d3933568bd2fa44bb07939"
+  },
+  {
+    "commit": "d31eda1",
+    "committed": "2026-10-17T03:32:55+13:00",
+    "file": "system_b_protocol_v1@d31eda1.json",
+    "sha256": "c5964cc08ca05ee90ee026965465f28f5efa90ee08d21fff5021c826a1d8125f"
+  },
+  {
+    "commit": "d5de0ad",
+    "committed": "2026-10-17T19:34:32+13:00",
+    "file": "system_b_protocol_v1@d5de0ad.json",
+    "sha256": "088dbd4780c8a1b69ccb2f66be637578bc1de807cc53b568e25fef90ca2d2827"
+  },
+  {
+    "commit": "9974480",
+    "committed": "2026-10-17T19:35:59+13:00",
+    "file": "system_b_protocol_v1@9974480.json",
+    "sha256": "c9f774c1e9256feb3f8564be1d0486b4268c18adf76970fa1911fcfdc80ae761"
+  },
+  {
+    "commit": "a6d2b71",
+    "committed": "2026-10-17T19:50:19+13:00",
+    "file": "system_b_protocol_v1@a6d2b71.json",
+    "sha256": "468670fcbbae92baacb02cd8700acfaf9a05d6161d915c6ffb816e3ef1286395"
+  },
+  {
+    "commit": "a5b52ad",
+    "committed": "2026-10-18T06:35:13+13:00",
+    "file": "system_b_protocol_v1@a5b52ad.json",
+    "sha256": "c4fac12e95093ec31566ddc6ef0dd4379ff386585c8b05d412b08226590a2470"
+  },
+  {
+    "commit": "6afba35",
+    "committed": "2026-10-18T06:36:44+13:00",
+    "file": "system_b_protocol_v1@6afba35.json",
+    "sha256": "c6f2e61dc0186718812bf5ee2bb30364d89563b8a039a35e6bcbdc031712a74d"
+  },
+  {
+    "commit": "c530a79",
+    "committed": "2026-10-18T06:37:26+13:00",
+    "file": "system_b_protocol_v1@c530a79.json",
+    "sha256": "cdf242fc3a3206dd7cfaf377ed942b32d2cc0cd58f7ea931d607caa2c5a360ad"
+  }
+]

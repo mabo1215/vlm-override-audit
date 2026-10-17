@@ -1,0 +1,182 @@
+{
+  "purpose": "CPU-only revision descriptive analysis; no policy selection or rerun",
+  "source_manifests": {
+    "RefCOCO+": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOplus_reduced_seed20270822.csv",
+    "RefCOCOg": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOg_reduced_seed20270822.csv",
+    "RefCOCO": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCO_reduced_seed20270822.csv"
+  },
+  "benchmarks": {
+    "RefCOCO+": {
+      "threshold": 0.4,
+      "rows": 4388,
+      "unique_images": 4388,
+      "train": {
+        "rows": 295,
+        "route_count": 23,
+        "help_count": 10,
+        "harm_count": 12,
+        "mean_baseline_iou": 0.7876925489308831,
+        "mean_challenger_iou": 0.7995735733911457,
+        "mean_delta_iou": 0.011881024460262589,
+        "routed_mean_baseline_iou": 0.530193488478666,
+        "routed_mean_challenger_iou": 0.7081406584413166,
+        "routed_mean_delta_iou": 0.1779471699626507
+      },
+      "select": {
+        "rows": 1325,
+        "route_count": 86,
+        "help_count": 47,
+        "harm_count": 36,
+        "mean_baseline_iou": 0.7486136557567743,
+        "mean_challenger_iou": 0.767705571779574,
+        "mean_delta_iou": 0.01909191602279968,
+        "routed_mean_baseline_iou": 0.49710107101534057,
+        "routed_mean_challenger_iou": 0.6649390659755472,
+        "routed_mean_delta_iou": 0.16783799496020652
+      },
+      "certify": {
+        "rows": 1325,
+        "route_count": 93,
+        "help_count": 45,
+        "harm_count": 42,
+        "mean_baseline_iou": 0.7648567316678786,
+        "mean_challenger_iou": 0.7818217491954735,
+        "mean_delta_iou": 0.01696501752759488,
+        "routed_mean_baseline_iou": 0.5356981848863835,
+        "routed_mean_challenger_iou": 0.6126042787947569,
+        "routed_mean_delta_iou": 0.07690609390837325
+      },
+      "confirm": {
+        "rows": 1443,
+        "route_count": 108,
+        "help_count": 67,
+        "harm_count": 46,
+        "mean_baseline_iou": 0.7608815397720463,
+        "mean_challenger_iou": 0.7847998452180553,
+        "mean_delta_iou": 0.023918305446008727,
+        "routed_mean_baseline_iou": 0.4954639610968496,
+        "routed_mean_challenger_iou": 0.6478946280455132,
+        "routed_mean_delta_iou": 0.1524306669486636
+      }
+    },
+    "RefCOCOg": {
+      "threshold": 0.6,
+      "rows": 4487,
+      "unique_images": 4487,
+      "train": {
+        "rows": 302,
+        "route_count": 18,
+        "help_count": 10,
+        "harm_count": 13,
+        "mean_baseline_iou": 0.7640543337513905,
+        "mean_challenger_iou": 0.7730821182812702,
+        "mean_delta_iou": 0.009027784529879504,
+        "routed_mean_baseline_iou": 0.5813448344162375,
+        "routed_mean_challenger_iou": 0.6989053617099262,
+        "routed_mean_delta_iou": 0.1175605272936887
+      },
+      "select": {
+        "rows": 1361,
+        "route_count": 62,
+        "help_count": 48,
+        "harm_count": 38,
+        "mean_baseline_iou": 0.7685992838565362,
+        "mean_challenger_iou": 0.78402355019079,
+        "mean_delta_iou": 0.01542426633425378,
+        "routed_mean_baseline_iou": 0.48189530620534643,
+        "routed_mean_challenger_iou": 0.5855769395414125,
+        "routed_mean_delta_iou": 0.10368163333606643
+      },
+      "certify": {
+        "rows": 1361,
+        "route_count": 59,
+        "help_count": 47,
+        "harm_count": 34,
+        "mean_baseline_iou": 0.7803218327761353,
+        "mean_challenger_iou": 0.7998026189540084,
+        "mean_delta_iou": 0.01948078617787311,
+        "routed_mean_baseline_iou": 0.5781829806454749,
+        "routed_mean_challenger_iou": 0.7216474429654207,
+        "routed_mean_delta_iou": 0.14346446231994575
+      },
+      "confirm": {
+        "rows": 1463,
+        "route_count": 85,
+        "help_count": 65,
+        "harm_count": 59,
+        "mean_baseline_iou": 0.7714978499559197,
+        "mean_challenger_iou": 0.7854746158348208,
+        "mean_delta_iou": 0.013976765878901018,
+        "routed_mean_baseline_iou": 0.5460533032300685,
+        "routed_mean_challenger_iou": 0.6669799828734916,
+        "routed_mean_delta_iou": 0.12092667964342303
+      }
+    },
+    "RefCOCO": {
+      "threshold": 0.4,
+      "rows": 4427,
+      "unique_images": 4427,
+      "train": {
+        "rows": 299,
+        "route_count": 18,
+        "help_count": 10,
+        "harm_count": 4,
+        "mean_baseline_iou": 0.8084304139499999,
+        "mean_challenger_iou": 0.8350770310605086,
+        "mean_delta_iou": 0.02664661711050862,
+        "routed_mean_baseline_iou": 0.5398695596142322,
+        "routed_mean_challenger_iou": 0.8228007436484506,
+        "routed_mean_delta_iou": 0.2829311840342183
+      },
+      "select": {
+        "rows": 1342,
+        "route_count": 68,
+        "help_count": 29,
+        "harm_count": 18,
+        "mean_baseline_iou": 0.8111703311615497,
+        "mean_challenger_iou": 0.8334790207058745,
+        "mean_delta_iou": 0.022308689544324762,
+        "routed_mean_baseline_iou": 0.6207379866719368,
+        "routed_mean_challenger_iou": 0.7796509539064168,
+        "routed_mean_delta_iou": 0.15891296723448015
+      },
+      "certify": {
+        "rows": 1342,
+        "route_count": 76,
+        "help_count": 29,
+        "harm_count": 15,
+        "mean_baseline_iou": 0.8140739633741619,
+        "mean_challenger_iou": 0.8357832366829807,
+        "mean_delta_iou": 0.02170927330881891,
+        "routed_mean_baseline_iou": 0.6359407111924236,
+        "routed_mean_challenger_iou": 0.8188917160450837,
+        "routed_mean_delta_iou": 0.18295100485266017
+      },
+      "confirm": {
+        "rows": 1444,
+        "route_count": 82,
+        "help_count": 32,
+        "harm_count": 18,
+        "mean_baseline_iou": 0.8151676147898939,
+        "mean_challenger_iou": 0.8320463423658349,
+        "mean_delta_iou": 0.01687872757594114,
+        "routed_mean_baseline_iou": 0.5865836520686786,
+        "routed_mean_challenger_iou": 0.7080648570554764,
+        "routed_mean_delta_iou": 0.12148120498679794
+      }
+    }
+  },
+  "image_pool_overlap": {
+    "pool_sizes": {
+      "RefCOCO+": 4388,
+      "RefCOCOg": 4487,
+      "RefCOCO": 4427
+    },
+    "pairwise_intersections": {
+      "RefCOCO+ & RefCOCOg": 664,
+      "RefCOCO+ & RefCOCO": 1261,
+      "RefCOCOg & RefCOCO": 660
+    },
+    "triple_intersection": 192
+  }
+}

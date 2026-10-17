@@ -1,0 +1,8 @@
+# CPU analysis: audit, diagnostics, tables and figures (tested with Python 3.12)
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+matplotlib==3.10.9
+pillow==12.2.0
+pyarrow==24.0.0

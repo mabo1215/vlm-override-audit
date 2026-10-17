@@ -1,0 +1,29 @@
+{
+  "g1": {
+    "file": "g1_records.jsonl.gz",
+    "generation_sha256": {
+      "g1_shard0of2.jsonl": "3d0a2ed3a001aacf2535d6c589628edae30d27a2a5666c78f7aeb62e76d7e87a",
+      "g1_shard1of2.jsonl": "4dd39c8c41d8a588810c4d438a951d33aece26fb934f5a69a0b9f492937d48b0"
+    },
+    "records": 13302,
+    "sha256": "e0a256dba4c78aaabc75065c485c23e9f54ff4ff0dc7b3b2d4f02e9c12541112"
+  },
+  "g2": {
+    "file": "g2_records.jsonl.gz",
+    "generation_sha256": {
+      "g2_shard0of2.jsonl": "4e4ba24f4bf118a3b186b37b7d01800aaf55e2d125ac076431611d288c6196b7",
+      "g2_shard1of2.jsonl": "485ef2e0298b28345a74ac701db564efc5f03fa7893c514c240b3e8a6bea8486"
+    },
+    "records": 12483,
+    "sha256": "1131601c140d41ad751cefcefb78f0586de94263f58aef14c48585e0f08eb7ec"
+  },
+  "g3": {
+    "file": "g3_records.jsonl.gz",
+    "generation_sha256": {
+      "g3_shard0of2.jsonl": "e1964f0fcebaa7382eb84925bb22454298725d1c3ac376a37cb9bb609f8a9504",
+      "g3_shard1of2.jsonl": "9196be006e9d59b65d938d9f06feab32202ed6e42c62e4fbb86f602ebe0037aa"
+    },
+    "records": 9999,
+    "sha256": "5221c428985ef5251a0eea4f3602a4e77f7289e0693e03963c4d84b5e57d073b"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "arm": "G2 pool (V1 training only)",
+  "by_benchmark": {
+    "RefCOCO": {
+      "images": 1592,
+      "listwise_switches": 983,
+      "mean_candidates": 5.598,
+      "no_default": 0,
+      "pairwise_switches": 520,
+      "records": 3430
+    },
+    "RefCOCO+": {
+      "images": 1592,
+      "listwise_switches": 1058,
+      "mean_candidates": 5.632,
+      "no_default": 0,
+      "pairwise_switches": 614,
+      "records": 3421
+    },
+    "RefCOCOg": {
+      "images": 3364,
+      "listwise_switches": 1526,
+      "mean_candidates": 5.722,
+      "no_default": 2,
+      "pairwise_switches": 1037,
+      "records": 5632
+    }
+  },
+  "errors": 0,
+  "generation_sha256": {
+    "g2_shard0of2.jsonl": "4e4ba24f4bf118a3b186b37b7d01800aaf55e2d125ac076431611d288c6196b7",
+    "g2_shard1of2.jsonl": "485ef2e0298b28345a74ac701db564efc5f03fa7893c514c240b3e8a6bea8486"
+  },
+  "images": 4000,
+  "mean_seconds_per_record": 8.488,
+  "peak_memory_mb_max": 19074,
+  "records": 12483,
+  "splits": [
+    "train"
+  ],
+  "status": "generation complete, label-free summary (no ground truth read)"
+}

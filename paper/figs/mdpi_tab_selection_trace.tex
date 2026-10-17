@@ -1,0 +1,33 @@
+\begin{table}[H]
+\caption{All six declared thresholds on the selection sets.  None has observed
+harm among switches of at most 5\%; bold rows are the selected rules (largest
+accuracy gain).\label{tab:selection-trace}}
+\centering
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Benchmark & $\tau$ & Switches & Helps & Harms & Accuracy change \\
+\midrule
+RefCOCO+ & \textbf{0.4} & \textbf{86} & \textbf{28} & \textbf{12} & $\mathbf{+1.21}$\pp \\
+ & 0.5 & 66 & 26 & 11 & $+1.13$\pp \\
+ & 0.6 & 52 & 22 & 11 & $+0.83$\pp \\
+ & 0.7 & 42 & 19 & 11 & $+0.60$\pp \\
+ & 0.8 & 36 & 16 & 9 & $+0.53$\pp \\
+ & 0.9 & 30 & 13 & 9 & $+0.30$\pp \\
+\midrule
+RefCOCOg & 0.4 & 102 & 25 & 22 & $+0.22$\pp \\
+ & 0.5 & 78 & 24 & 17 & $+0.51$\pp \\
+ & \textbf{0.6} & \textbf{62} & \textbf{23} & \textbf{15} & $\mathbf{+0.59}$\pp \\
+ & 0.7 & 50 & 20 & 14 & $+0.44$\pp \\
+ & 0.8 & 46 & 17 & 14 & $+0.22$\pp \\
+ & 0.9 & 37 & 13 & 11 & $+0.15$\pp \\
+\midrule
+RefCOCO & \textbf{0.4} & \textbf{68} & \textbf{16} & \textbf{7} & $\mathbf{+0.67}$\pp \\
+ & 0.5 & 44 & 14 & 7 & $+0.52$\pp \\
+ & 0.6 & 34 & 11 & 6 & $+0.37$\pp \\
+ & 0.7 & 27 & 8 & 6 & $+0.15$\pp \\
+ & 0.8 & 24 & 6 & 6 & $+0.00$\pp \\
+ & 0.9 & 17 & 4 & 5 & $-0.07$\pp \\
+\bottomrule
+\end{tabular}
+\end{table}

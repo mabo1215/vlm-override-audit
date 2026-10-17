@@ -1,0 +1,43 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{The trained verifier V1.  Ungated: the selected pairwise rule;
+V1-gated: switch only if $s\ge\tau$ and V1's harm probability is at most
+$\nu$, selected from the declared $(\tau,\nu)$ family before the
+certification labels were read.  $m/h/k$: switches, helps and harms on the
+same certification and confirmation images; $U$: exact 95\% bound.  Caught
+and false vetoes: harmful and other switches with $s\ge\tau$ that V1 vetoes
+on the selection set, with exact two-sided 95\% intervals in percent.  On the
+ungated rows: help-versus-harm AUROC of the switch score $s$ and of V1's harm
+probability $v$ (higher $v$ on harm) on the certification set.  System A
+rows are post hoc, because its labels were read before V1 was
+trained.\label{tab:gated}}
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}llrrlrll@{}}
+\toprule
+& & \multicolumn{3}{c}{Certification set} & Confirmation & \multicolumn{2}{c}{V1 on the selection set} \\
+\cmidrule(lr){3-5}\cmidrule(lr){7-8}
+Benchmark & Rule & $m/h/k$ & $U$ & Verdict & $m/h/k$ & Harms caught & False vetoes \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{System B}} \\
+RefCOCO+ & ungated $\tau=1.51$ & 19/3/9 & 68.0\% & not certified & 30/5/13 & \multicolumn{2}{c}{AUROC $s$ 0.67, $v$ 0.73} \\
+ & V1-gated $\tau=1.51$, $\nu=0.30$ & 1/0/0 & 95.0\% & not certified & 4/0/0 & 12/12 [74, 100] & 14/17 [57, 96] \\
+\addlinespace
+RefCOCOg & ungated $\tau=1.81$ & 25/3/12 & 65.9\% & not certified & 19/4/11 & \multicolumn{2}{c}{AUROC $s$ 0.71, $v$ 0.73} \\
+ & V1-gated $\tau=10^{-6}$, $\nu=0.02$ & 59/3/3 & 12.6\% & not certified & 85/0/0 & 131/133 [95, 100] & 60/129 [38, 55] \\
+\addlinespace
+RefCOCO & ungated $\tau=0.77$ & 49/8/24 & 61.5\% & not certified & 47/5/22 & \multicolumn{2}{c}{AUROC $s$ 0.63, $v$ 0.57} \\
+ & V1-gated $\tau=0.16$, $\nu=0.05$ & 56/1/4 & 15.6\% & not certified & 42/0/0 & 72/73 [93, 100] & 35/80 [33, 55] \\
+\addlinespace
+RefCLEF & ungated $\tau=3.61$ & 164/103/5 & 6.3\% & not certified & 191/118/8 & \multicolumn{2}{c}{AUROC $s$ 0.80, $v$ 0.53} \\
+ & V1-gated $\tau=2.09$, $\nu=0.30$ & 69/16/0 & 4.2\% & certified & 66/15/1 & 38/38 [91, 100] & 303/381 [75, 83] \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{System A, post hoc}} \\
+RefCOCO+ & V1-gated $\tau=0.4$, $\nu=0.30$ & 43/1/0 & 6.7\% & not certified & 39/3/1 & 12/12 [74, 100] & 36/74 [37, 61] \\
+RefCOCOg & V1-gated $\tau=0.4$, $\nu=0.30$ & 54/2/0 & 5.4\% & not certified & 68/11/1 & 20/22 [71, 99] & 30/80 [27, 49] \\
+RefCOCO & V1-gated $\tau=0.4$, $\nu=0.30$ & 51/1/0 & 5.7\% & not certified & 49/5/0 & 7/7 [59, 100] & 16/61 [16, 39] \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

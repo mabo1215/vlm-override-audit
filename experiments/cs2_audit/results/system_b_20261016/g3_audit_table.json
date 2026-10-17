@@ -1,0 +1,107 @@
+{
+  "alpha": 0.05,
+  "delta": 0.05,
+  "g3b_transfer": {
+    "listwise": {
+      "conditional_harm": 0.15775034293552812,
+      "cp_upper": 0.18166645637858514,
+      "harm_count": 115,
+      "help_count": 184,
+      "n": 2999,
+      "net_accuracy_gain": 0.02300766922307436,
+      "policy": "score_ge_2.8125",
+      "route_count": 729,
+      "status": "not-certified"
+    },
+    "pairwise": {
+      "conditional_harm": 0.13175675675675674,
+      "cp_upper": 0.15189983665160284,
+      "harm_count": 117,
+      "help_count": 243,
+      "n": 2999,
+      "net_accuracy_gain": 0.04201400466822274,
+      "policy": "score_ge_0.770833",
+      "route_count": 888,
+      "status": "not-certified"
+    }
+  },
+  "note": "G3a: thresholds from RefCLEF's own training set; G3b: G1's frozen RefCOCO rules applied once to the RefCLEF confirmation set (routes committed before any RefCLEF label).",
+  "rows": [
+    {
+      "arm": "G3",
+      "benchmark": "RefCLEF",
+      "certify": {
+        "conditional_harm": 0.03048780487804878,
+        "cp_upper": 0.06303120411760345,
+        "harm_count": 5,
+        "help_count": 103,
+        "n": 3000,
+        "net_accuracy_gain": 0.03266666666666666,
+        "route_count": 164,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.041884816753926704,
+        "cp_upper": 0.07430329101819935,
+        "harm_count": 8,
+        "help_count": 118,
+        "n": 2999,
+        "net_accuracy_gain": 0.03667889296432144,
+        "route_count": 191,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_3.61458"
+    },
+    {
+      "arm": "G3-listwise",
+      "benchmark": "RefCLEF",
+      "certify": {
+        "conditional_harm": 0.15939278937381404,
+        "cp_upper": 0.18798193422473292,
+        "harm_count": 84,
+        "help_count": 151,
+        "n": 3000,
+        "net_accuracy_gain": 0.022333333333333334,
+        "route_count": 527,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.13457943925233645,
+        "cp_upper": 0.1612911261946822,
+        "harm_count": 72,
+        "help_count": 153,
+        "n": 2999,
+        "net_accuracy_gain": 0.027009003001000332,
+        "route_count": 535,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_3.4375"
+    },
+    {
+      "arm": "G3-gated",
+      "benchmark": "RefCLEF",
+      "certify": {
+        "conditional_harm": 0.0,
+        "cp_upper": 0.04248741054859369,
+        "harm_count": 0,
+        "help_count": 16,
+        "n": 3000,
+        "net_accuracy_gain": 0.005333333333333333,
+        "route_count": 69,
+        "status": "certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.015151515151515152,
+        "cp_upper": 0.0698699461908631,
+        "harm_count": 1,
+        "help_count": 15,
+        "n": 2999,
+        "net_accuracy_gain": 0.004668222740913638,
+        "route_count": 66,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_2.08594_veto_gt_0.30"
+    }
+  ],
+  "system": "System B (InternVL3-8B-hf)"
+}

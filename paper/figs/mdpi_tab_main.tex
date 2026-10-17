@@ -1,0 +1,36 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Accuracy view and audit view on the certification sets.  ``Harm among
+switches'' is $k/m$; ``Upper bound'' is the exact one-sided 95\% bound $U$; the
+limit is 5\%.  Accuracy change is in percentage points (pp) over all $n$
+images.  The selected rule is the only rule tested formally.  $^\dagger$Always
+switch takes every proposed switch ($s>0$); it was not in the declared rule
+family, so its bound is descriptive.  $^\ddagger$Random proposals switch the
+same number of images, drawn uniformly among those with a proposed switch
+(expected values).\label{tab:main}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrrrrl@{}}
+\toprule
+& & Switches & Helps & Harms & Harm among & Upper & Accuracy & \\
+Benchmark & Rule & $m$ & $h$ & $k$ & switches $k/m$ & bound $U$ & change & Verdict \\
+\midrule
+RefCOCO+ & always switch$^\dagger$ & 452 & 45 & 42 & 9.3\% & 11.9\% & $+0.23$\pp & -- \\
+$n=1{,}325$ & selected, $\tau=0.4$ & 93 & 20 & 19 & \textbf{20.4\%} & \textbf{28.5\%} & $+0.08$\pp & not certified \\
+ & random proposals$^\ddagger$ & 93 & 9.3 & 8.6 & 9.3\% & -- & $+0.05$\pp & -- \\
+ & hindsight oracle & 45 & 45 & 0 & 0.0\% & -- & $+3.40$\pp & uses labels \\
+\midrule
+RefCOCOg & always switch$^\dagger$ & 490 & 47 & 34 & 6.9\% & 9.1\% & $+0.96$\pp & -- \\
+$n=1{,}361$ & selected, $\tau=0.6$ & 59 & 19 & 10 & \textbf{16.9\%} & \textbf{27.1\%} & $+0.66$\pp & not certified \\
+ & random proposals$^\ddagger$ & 59 & 5.7 & 4.1 & 6.9\% & -- & $+0.12$\pp & -- \\
+ & hindsight oracle & 47 & 47 & 0 & 0.0\% & -- & $+3.45$\pp & uses labels \\
+\midrule
+RefCOCO & always switch$^\dagger$ & 397 & 29 & 15 & 3.8\% & 5.8\% & $+1.04$\pp & -- \\
+$n=1{,}342$ & selected, $\tau=0.4$ & 76 & 17 & 6 & \textbf{7.9\%} & \textbf{15.0\%} & $+0.82$\pp & not certified \\
+ & random proposals$^\ddagger$ & 76 & 5.6 & 2.9 & 3.8\% & -- & $+0.20$\pp & -- \\
+ & hindsight oracle & 29 & 29 & 0 & 0.0\% & -- & $+2.16$\pp & uses labels \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

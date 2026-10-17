@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-10-18",
+  "method": "Flickr photo page https://www.flickr.com/photo.gne?id=<photo id>, owner name, title and licence as shown on the page",
+  "rule": "an image is shown only if its COCO licence is 4, 7 or 8 and its Flickr page still exists with a CC BY-compatible licence, so that the creator can be credited",
+  "checks": {
+    "215191": {"flickr_photo_id": "6285390715", "status": "ok", "licence": "CC BY 2.0", "owner": "Emanuello Brigant", "title": "De gulden middenweg"},
+    "267111": {"flickr_photo_id": "2849892634", "status": "unavailable", "licence": null, "owner": null, "title": null},
+    "162213": {"flickr_photo_id": "312077087", "status": "ok", "licence": "CC BY 2.0", "owner": "Linda Hartley", "title": "cut"},
+    "501814": {"flickr_photo_id": "8180668665", "status": "incompatible", "licence": "CC BY-NC-SA 2.0", "owner": "IRRI Photos", "title": "DSC_7446"},
+    "381947": {"flickr_photo_id": "2147451834", "status": "ok", "licence": "CC BY 2.0", "owner": "Paul Williams", "title": "Colchester Zoo - Zebras"}
+  }
+}

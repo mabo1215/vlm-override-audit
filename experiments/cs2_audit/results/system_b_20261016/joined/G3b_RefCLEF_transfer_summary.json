@@ -1,0 +1,39 @@
+{
+  "arm": "G3b",
+  "listwise": {
+    "challenger_correct": 1548,
+    "conditional_harm": 0.15775034293552812,
+    "cp_delta": 0.05,
+    "cp_upper": 0.18166645637858514,
+    "harm_count": 115,
+    "help_count": 184,
+    "incumbent_correct": 1718,
+    "n": 2999,
+    "net_accuracy_gain": 0.02300766922307436,
+    "policy": "score_ge_2.8125",
+    "route_count": 729,
+    "route_rate": 0.243081027009003,
+    "split": "confirm",
+    "status": "not-certified",
+    "unconditional_harm": 0.0383461153717906
+  },
+  "pairwise": {
+    "challenger_correct": 1738,
+    "conditional_harm": 0.13175675675675674,
+    "cp_delta": 0.05,
+    "cp_upper": 0.15189983665160284,
+    "harm_count": 117,
+    "help_count": 243,
+    "incumbent_correct": 1718,
+    "n": 2999,
+    "net_accuracy_gain": 0.04201400466822274,
+    "policy": "score_ge_0.770833",
+    "route_count": 888,
+    "route_rate": 0.2960986995665222,
+    "split": "confirm",
+    "status": "not-certified",
+    "unconditional_harm": 0.03901300433477826
+  },
+  "source": "G1 RefCOCO",
+  "target": "RefCLEF"
+}

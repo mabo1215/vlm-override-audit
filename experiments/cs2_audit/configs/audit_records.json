@@ -1,0 +1,57 @@
+{
+  "version": "2026-10-18",
+  "note": "Audited record files used by every analysis.  System A points to the rebuilt records (results/system_a_records_v2_20261016: scored-default IoU and tie tolerance, review J7/J8); the archived 2026-08 manifests are kept unchanged for reproduction.  Thresholds are the rules frozen on each selection set.  System B (InternVL3-8B-hf, preregistered in configs/system_b_protocol_v1.json) points to its assembled pairwise manifests on the same COCO records (arm G1) and on RefCLEF (arm G3); its listwise and V1-gated audits are in the same folder.",
+  "systems": {
+    "System A": {
+      "RefCOCO+": {
+        "primary": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOplus_reduced_seed20270822.csv",
+        "threshold": 0.4,
+        "audit_summary": "experiments/cs2_audit/results/system_a_records_v2_20261016/audit_RefCOCOplus_seed20270822/audit_summary.json",
+        "reductions": {
+          "20270823": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOplus_reduced_seed20270823.csv",
+          "20270824": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOplus_reduced_seed20270824.csv"
+        }
+      },
+      "RefCOCOg": {
+        "primary": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOg_reduced_seed20270822.csv",
+        "threshold": 0.6,
+        "audit_summary": "experiments/cs2_audit/results/system_a_records_v2_20261016/audit_RefCOCOg_seed20270822/audit_summary.json",
+        "reductions": {
+          "20270823": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOg_reduced_seed20270823.csv",
+          "20270824": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCOg_reduced_seed20270824.csv"
+        }
+      },
+      "RefCOCO": {
+        "primary": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCO_reduced_seed20270822.csv",
+        "threshold": 0.4,
+        "audit_summary": "experiments/cs2_audit/results/system_a_records_v2_20261016/audit_RefCOCO_seed20270822/audit_summary.json",
+        "reductions": {
+          "20270823": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCO_reduced_seed20270823.csv",
+          "20270824": "experiments/cs2_audit/results/system_a_records_v2_20261016/RefCOCO_reduced_seed20270824.csv"
+        }
+      }
+    },
+    "System B": {
+      "RefCOCO+": {
+        "primary": "experiments/cs2_audit/results/system_b_20261016/joined/G1_RefCOCO+_manifest.csv",
+        "threshold": 1.51041632629931,
+        "audit_summary": "experiments/cs2_audit/results/system_b_20261016/joined/G1_RefCOCO+_audit_summary.json"
+      },
+      "RefCOCOg": {
+        "primary": "experiments/cs2_audit/results/system_b_20261016/joined/G1_RefCOCOg_manifest.csv",
+        "threshold": 1.8083333447575576,
+        "audit_summary": "experiments/cs2_audit/results/system_b_20261016/joined/G1_RefCOCOg_audit_summary.json"
+      },
+      "RefCOCO": {
+        "primary": "experiments/cs2_audit/results/system_b_20261016/joined/G1_RefCOCO_manifest.csv",
+        "threshold": 0.7708333911995096,
+        "audit_summary": "experiments/cs2_audit/results/system_b_20261016/joined/G1_RefCOCO_audit_summary.json"
+      },
+      "RefCLEF": {
+        "primary": "experiments/cs2_audit/results/system_b_20261016/joined/G3_RefCLEF_manifest.csv",
+        "threshold": 3.6145835538084308,
+        "audit_summary": "experiments/cs2_audit/results/system_b_20261016/joined/G3_RefCLEF_audit_summary.json"
+      }
+    }
+  }
+}

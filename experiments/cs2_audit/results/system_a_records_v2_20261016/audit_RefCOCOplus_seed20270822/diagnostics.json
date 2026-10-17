@@ -1,0 +1,31 @@
+{
+  "auroc_help_harm": {
+    "auroc": 0.5529100529100529,
+    "n_harm": 42,
+    "n_help": 45
+  },
+  "net_accuracy_gain_bootstrap": {
+    "alpha": 0.05,
+    "cluster_unit": "image_id",
+    "lower": -0.008320754716981132,
+    "mean": 0.0006852830188679245,
+    "n_bootstrap": 1000,
+    "point_estimate": 0.0007547169811320754,
+    "seed": 20270822,
+    "upper": 0.009056603773584906
+  },
+  "placebo": {
+    "n_repeats": 200,
+    "null_ci95": [
+      -0.0030188679245283017,
+      0.0037735849056603774
+    ],
+    "null_hypothesis": "score carries no image-level information about the help/harm outcome beyond route mass",
+    "null_mean": 0.00022641509433962267,
+    "observed_net_accuracy_gain": 0.0007547169811320754,
+    "p_value_one_sided_greater": 0.46766169154228854,
+    "permutation_unit": "image_id (block-shuffled image-mean score)",
+    "policy": "score_ge_0.40",
+    "seed": 20270822
+  }
+}

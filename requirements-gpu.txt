@@ -1,0 +1,9 @@
+# System B generation and V1 image-text features (one 24 GB GPU per worker)
+torch==2.8.0
+torchvision==0.23.0
+transformers==4.57.6
+accelerate
+huggingface_hub
+timm
+sentencepiece
+protobuf

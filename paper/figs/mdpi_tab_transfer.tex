@@ -1,0 +1,24 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Transfer test on the RefCLEF confirmation set (2,999 images).  The
+RefCOCO rules were frozen on RefCOCO's selection set and their RefCLEF
+switches were fixed and committed before any RefCLEF label was read; the
+in-source rules were selected on RefCLEF's own selection set.  $m/h/k$:
+switches, helps and harms; $U$: exact one-sided 95\% upper bound; accuracy
+change over all 2,999 images.\label{tab:transfer}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Score & Rule & $m$ & $h$ & $k$ & $k/m$ & $U$ & Accuracy change \\
+\midrule
+pairwise & RefCOCO rule (transfer), $\tau=0.77$ & 888 & 243 & 117 & 13.2\% & 15.2\% & $+4.20$\pp \\
+ & RefCLEF rule (in-source), $\tau=3.61$ & 191 & 118 & 8 & 4.2\% & 7.4\% & $+3.67$\pp \\
+listwise & RefCOCO rule (transfer), $\tau=2.81$ & 729 & 184 & 115 & 15.8\% & 18.2\% & $+2.30$\pp \\
+ & RefCLEF rule (in-source), $\tau=3.44$ & 535 & 153 & 72 & 13.5\% & 16.1\% & $+2.70$\pp \\
+V1-gated & RefCLEF rule (in-source), $\tau=2.09$, $\nu=0.30$ & 66 & 15 & 1 & 1.5\% & 7.0\% & $+0.47$\pp \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

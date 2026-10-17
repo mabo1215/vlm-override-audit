@@ -1,0 +1,196 @@
+{
+  "alpha": 0.05,
+  "certificate": "one-sided Clopper-Pearson upper bound on conditional harm at level delta for the one frozen rule",
+  "coordinate_frame": "model output in [0, 1000] on both axes, divided by 1000 and clipped to [0, 1]",
+  "created_utc": "2026-10-15T22:47:41+00:00",
+  "default_decoding": {
+    "do_sample": false,
+    "max_new_tokens": 64
+  },
+  "delta": 0.05,
+  "detector": {
+    "box_threshold": 0.25,
+    "query": "expression stripped, trailing period removed, lower-cased, then '.' appended",
+    "text_threshold": 0.25,
+    "top_n": 5
+  },
+  "frozen_rules": {},
+  "g3b_transfer": "G3b applies, once, System B's rules frozen for RefCOCO in G1 (pairwise primary, listwise secondary) to the RefCLEF confirmation set; no RefCLEF label is read before that application",
+  "grounding_prompt": "Please provide the bounding box coordinate of the region this sentence describes: <ref>{text}</ref>",
+  "grounding_prompt_sha256": "2974a23ffd3dfdff64ef5a2bef793bbf3c27ae53efb236b11a85c57e7bfc3862",
+  "host": {
+    "gpus": "2,3",
+    "name": "ubuntu-4card",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.6"
+  },
+  "inputs": {
+    "g1": {
+      "counts": {
+        "RefCOCO": {
+          "certify": 1342,
+          "confirm": 1444,
+          "select": 1342,
+          "train": 299
+        },
+        "RefCOCO+": {
+          "certify": 1325,
+          "confirm": 1443,
+          "select": 1325,
+          "train": 295
+        },
+        "RefCOCOg": {
+          "certify": 1361,
+          "confirm": 1463,
+          "select": 1361,
+          "train": 302
+        }
+      },
+      "gt_sha256": "bae81cdbb30648d177394f63181d8a976deb289dd6887cb9c24d4caeecf8608a",
+      "records_sha256": "83e26bd413f1fc540a0186861c0833dc53110375d0e8b9aed9af58caaba031a5"
+    },
+    "g2": {
+      "gt_sha256": "555c201ef06b47433cd26b237832d4961d9d2e7dd9315c7c36d443d889968325",
+      "records_by_benchmark": {
+        "RefCOCO": 3430,
+        "RefCOCO+": 3421,
+        "RefCOCOg": 5632
+      },
+      "records_sha256": "28255beb5b80a0fbdaac561a8576b10f94eb96a2d200d944615f11cfbbadbad9"
+    },
+    "g3": {
+      "gt_sha256": "9b8c4a7b479a1e3bac5e1aca82f96c4fa4b843054d376625cf9b671500366fad",
+      "records_sha256": "291f93c1561273922838e7f35d8ab10a113e8af0fd64d5140ec1a17662d3f7d2",
+      "split_counts": {
+        "certify": 3000,
+        "confirm": 2999,
+        "select": 3000,
+        "train": 1000
+      }
+    }
+  },
+  "listwise_prompt": "{regions}\n(coordinates are normalized to 0-1000)\nWhich region best shows '{text}'? Answer with only the region letter.",
+  "listwise_prompt_sha256": "de30d510c087d712272b3934428da3474539182be60e6f7cf981c00647a38560",
+  "listwise_region_line": "Region {letter}: <box>[[{x1}, {y1}, {x2}, {y2}]]</box>, letters A-F in listing order",
+  "merge": {
+    "drop_if_iou_at_least": 0.9,
+    "max_candidates_including_default": 6,
+    "order": "default, samples in sample order, detector boxes by descending score"
+  },
+  "models": {
+    "clip": {
+      "config_sha256": "51b1c14aabcdf639c4a0370eeda1010b773bbe1df78319c7d0f5882c22ac0ac0",
+      "repo": "openai/clip-vit-large-patch14-336",
+      "revision": "ce19dc912ca5cd21c8a653c79e251e808ccabcd1"
+    },
+    "detector": {
+      "config_sha256": "eda416dae6f49419ff831b1c190ec430a060b19aae688dbaf2425a075b650608",
+      "repo": "IDEA-Research/grounding-dino-base",
+      "revision": "12bdfa3120f3e7ec7b434d90674b3396eccf88eb"
+    },
+    "siglip": {
+      "config_sha256": "adc04928d8fd19a61822584fe0cf2e813e5ebac17f3e49fb1ea096860ae6457b",
+      "repo": "google/siglip-so400m-patch14-384",
+      "revision": "9fdffc58afc957d1a03a25b10dba0329ab15c2a3"
+    },
+    "vlm": {
+      "config_sha256": "2f651cf5dcad81635fcd688dc8aa569797a3d829b9d0644f489e1c7272b1c637",
+      "crop_to_patches": true,
+      "dtype": "bfloat16",
+      "max_patches": 6,
+      "repo": "OpenGVLab/InternVL3-8B-hf",
+      "revision": "259a3b64a14623c0ec91a045cb43f7c5af5fa6af"
+    }
+  },
+  "pairwise_prompt": "Region A: <box>[[{a}]]</box>\nRegion B: <box>[[{b}]]</box>\n(coordinates are normalized to 0-1000)\nWhich region better shows '{text}'? Answer with only 'A' or 'B'.",
+  "pairwise_prompt_sha256": "8f5625bf2fe8395c0babf1f4f7456fbcf83014f6a1d4e6273a29a6e280089da2",
+  "pilot": {
+    "candidates_mean": 5.87,
+    "default_parsed": 60,
+    "errors": 0,
+    "frame_check": "8 parsed default boxes overlaid on their images; all on the described object",
+    "passes_mean": 31.9,
+    "peak_memory_mb": 19022.9,
+    "prefix_cached": 60,
+    "records": 60,
+    "sample_parsed_mean": 7.98,
+    "seconds_mean": 7.83,
+    "split": "train (RefCOCO, G1 records)"
+  },
+  "protocol_version": "system_b_v1",
+  "sample_decoding": {
+    "do_sample": true,
+    "max_new_tokens": 64,
+    "num_return_sequences": 8,
+    "seed": "20271016 + int(sha256(expression_id)[:8], 16)",
+    "temperature": 0.7,
+    "top_k": 0,
+    "top_p": 0.9
+  },
+  "score": {
+    "aggregation": "row mean over all K entries including the zero diagonal, then centred",
+    "default_parse_failure": "empty default (IoU 0) and switch score 0",
+    "no_switch_score": 0.0,
+    "orders": "both; value = 0.5 * (forward - reverse)",
+    "pairwise": "log p('A') - log p('B') at the next token, label variants pooled by logsumexp",
+    "switch_score": "theta[best] - theta[default]; best = argmax theta, first index on ties",
+    "tie_tolerance": 1e-06
+  },
+  "score_listwise": {
+    "aggregation": "mean over the two listings of each candidate's renormalized log probability, then centred",
+    "audit": "own label-free threshold family; selected, frozen, certified and confirmed in the same joins as the pairwise rule; never substituted for it",
+    "orders": "two listings: merge order and reverse merge order; none when K = 1",
+    "per_order": "log p(letter) pooled over label variants, renormalized over the K shown letters",
+    "status": "secondary preregistered score (author decision 2026-10-16); the primary claim uses the pairwise score",
+    "switch_score": "phi[best] - phi[default]; best = argmax phi, first index on ties; same tie tolerance"
+  },
+  "selection_rule": "select_policy on the selection labels only: among rules with >= 1 switch and observed conditional harm <= alpha, maximize net accuracy gain (ties: higher coverage, then lower threshold); if none passes, take the largest observed net gain and still certify it",
+  "threshold_families": {
+    "G1": {
+      "RefCOCO": [
+        1e-06,
+        0.15624998323619366,
+        0.2916666902601719,
+        0.5833333168799679,
+        0.7708333911995096
+      ],
+      "RefCOCO+": [
+        1e-06,
+        0.25520836406697817,
+        0.4166665294518074,
+        0.7187499688200965,
+        1.51041632629931
+      ],
+      "RefCOCOg": [
+        1e-06,
+        0.20052086907283728,
+        0.5520833889992598,
+        1.083333258381269,
+        1.8083333447575576
+      ]
+    },
+    "G1-listwise": {
+      "RefCOCO": [
+        1e-06,
+        0.5781251732259989,
+        1.3750000719446691,
+        2.171875100582838,
+        2.812500243633985
+      ],
+      "RefCOCO+": [
+        1e-06,
+        0.7656251788139343,
+        1.1875002831220627,
+        2.1250000409781933,
+        2.906250037252903
+      ],
+      "RefCOCOg": [
+        1e-06,
+        0.6562501396983859,
+        1.312499925494194,
+        2.562500152736902,
+        3.118750084377825
+      ]
+    }
+  }
+}

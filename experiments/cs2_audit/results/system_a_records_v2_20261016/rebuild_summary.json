@@ -1,0 +1,92 @@
+{
+  "RefCOCO+:20270822": {
+    "default_correctness_changed": 4,
+    "default_iou_changed": 9,
+    "output": "RefCOCOplus_reduced_seed20270822.csv",
+    "records": 4388,
+    "source": "predictions_one_expression_per_image.csv",
+    "switches_after": 1460,
+    "switches_before": 1579,
+    "ties_set_to_no_switch": 119
+  },
+  "RefCOCO+:20270823": {
+    "default_correctness_changed": 5,
+    "default_iou_changed": 10,
+    "output": "RefCOCOplus_reduced_seed20270823.csv",
+    "records": 4388,
+    "source": "predictions_reduced_seed20270823.csv",
+    "switches_after": 1463,
+    "switches_before": 1581,
+    "ties_set_to_no_switch": 118
+  },
+  "RefCOCO+:20270824": {
+    "default_correctness_changed": 6,
+    "default_iou_changed": 11,
+    "output": "RefCOCOplus_reduced_seed20270824.csv",
+    "records": 4388,
+    "source": "predictions_reduced_seed20270824.csv",
+    "switches_after": 1461,
+    "switches_before": 1584,
+    "ties_set_to_no_switch": 123
+  },
+  "RefCOCO:20270822": {
+    "default_correctness_changed": 2,
+    "default_iou_changed": 6,
+    "output": "RefCOCO_reduced_seed20270822.csv",
+    "records": 4427,
+    "source": "predictions_reduced_seed20270822.csv",
+    "switches_after": 1317,
+    "switches_before": 1459,
+    "ties_set_to_no_switch": 142
+  },
+  "RefCOCO:20270823": {
+    "default_correctness_changed": 2,
+    "default_iou_changed": 6,
+    "output": "RefCOCO_reduced_seed20270823.csv",
+    "records": 4427,
+    "source": "predictions_reduced_seed20270823.csv",
+    "switches_after": 1309,
+    "switches_before": 1445,
+    "ties_set_to_no_switch": 136
+  },
+  "RefCOCO:20270824": {
+    "default_correctness_changed": 2,
+    "default_iou_changed": 6,
+    "output": "RefCOCO_reduced_seed20270824.csv",
+    "records": 4427,
+    "source": "predictions_reduced_seed20270824.csv",
+    "switches_after": 1315,
+    "switches_before": 1451,
+    "ties_set_to_no_switch": 136
+  },
+  "RefCOCOg:20270822": {
+    "default_correctness_changed": 9,
+    "default_iou_changed": 17,
+    "output": "RefCOCOg_reduced_seed20270822.csv",
+    "records": 4487,
+    "source": "predictions_reduced_seed20270822.csv",
+    "switches_after": 1619,
+    "switches_before": 1729,
+    "ties_set_to_no_switch": 110
+  },
+  "RefCOCOg:20270823": {
+    "default_correctness_changed": 8,
+    "default_iou_changed": 16,
+    "output": "RefCOCOg_reduced_seed20270823.csv",
+    "records": 4487,
+    "source": "predictions_reduced_seed20270823.csv",
+    "switches_after": 1626,
+    "switches_before": 1735,
+    "ties_set_to_no_switch": 109
+  },
+  "RefCOCOg:20270824": {
+    "default_correctness_changed": 8,
+    "default_iou_changed": 16,
+    "output": "RefCOCOg_reduced_seed20270824.csv",
+    "records": 4487,
+    "source": "predictions_reduced_seed20270824.csv",
+    "switches_after": 1623,
+    "switches_before": 1733,
+    "ties_set_to_no_switch": 110
+  }
+}

@@ -1,0 +1,41 @@
+\begin{table}[H]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{System B. Accuracy view and audit view on the certification sets.  ``Harm among
+switches'' is $k/m$; ``Upper bound'' is the exact one-sided 95\% bound $U$; the
+limit is 5\%.  Accuracy change is in percentage points (pp) over all $n$
+images.  The selected rule is the only rule tested formally.  $^\dagger$Always
+switch takes every proposed switch ($s>0$); it was not in the declared rule
+family, so its bound is descriptive.  $^\ddagger$Random proposals switch the
+same number of images, drawn uniformly among those with a proposed switch
+(expected values).\label{tab:sysb-main}}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrrrrl@{}}
+\toprule
+& & Switches & Helps & Harms & Harm among & Upper & Accuracy & \\
+Benchmark & Rule & $m$ & $h$ & $k$ & switches $k/m$ & bound $U$ & change & Verdict \\
+\midrule
+RefCOCO+ & always switch$^\dagger$ & 269 & 15 & 133 & 49.4\% & 54.6\% & $-8.91$\pp & -- \\
+$n=1{,}325$ & selected, $\tau=1.51$ & 19 & 3 & 9 & \textbf{47.4\%} & \textbf{68.0\%} & $-0.45$\pp & not certified \\
+ & random proposals$^\ddagger$ & 19 & 1.1 & 9.4 & 49.4\% & -- & $-0.63$\pp & -- \\
+ & hindsight oracle & 15 & 15 & 0 & 0.0\% & -- & $+1.13$\pp & uses labels \\
+\midrule
+RefCOCOg & always switch$^\dagger$ & 242 & 15 & 117 & 48.3\% & 53.8\% & $-7.49$\pp & -- \\
+$n=1{,}361$ & selected, $\tau=1.81$ & 25 & 3 & 12 & \textbf{48.0\%} & \textbf{65.9\%} & $-0.66$\pp & not certified \\
+ & random proposals$^\ddagger$ & 25 & 1.5 & 12.1 & 48.3\% & -- & $-0.77$\pp & -- \\
+ & hindsight oracle & 15 & 15 & 0 & 0.0\% & -- & $+1.10$\pp & uses labels \\
+\midrule
+RefCOCO & always switch$^\dagger$ & 212 & 17 & 79 & 37.3\% & 43.1\% & $-4.62$\pp & -- \\
+$n=1{,}342$ & selected, $\tau=0.77$ & 49 & 8 & 24 & \textbf{49.0\%} & \textbf{61.5\%} & $-1.19$\pp & not certified \\
+ & random proposals$^\ddagger$ & 49 & 3.9 & 18.3 & 37.3\% & -- & $-1.07$\pp & -- \\
+ & hindsight oracle & 17 & 17 & 0 & 0.0\% & -- & $+1.27$\pp & uses labels \\
+\midrule
+RefCLEF & always switch$^\dagger$ & 1{,}537 & 283 & 250 & 16.3\% & 17.9\% & $+1.10$\pp & -- \\
+$n=3{,}000$ & selected, $\tau=3.61$ & 164 & 103 & 5 & \textbf{3.0\%} & \textbf{6.3\%} & $+3.27$\pp & not certified \\
+ & random proposals$^\ddagger$ & 164 & 30.2 & 26.7 & 16.3\% & -- & $+0.12$\pp & -- \\
+ & hindsight oracle & 283 & 283 & 0 & 0.0\% & -- & $+9.43$\pp & uses labels \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

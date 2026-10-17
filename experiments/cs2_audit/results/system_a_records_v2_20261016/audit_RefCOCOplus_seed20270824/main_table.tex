@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Selective-switching audit results (exact counts from the archived manifest).}
+\label{tab:cs2_main}
+\begin{tabular}{lrrrrrrrl}
+\toprule
+Method & $n$ & $m$ & Help & Harm & $k/m$ & $U_{.05}$ & Net & Status \\
+\midrule
+No-switch & 1325 & 0 & 0 & 0 & N/A & N/A & 0.000 & zero-route; conditional harm undefined \\
+Raw-score (uncertified) & 1325 & 95 & 21 & 19 & 0.200 & N/A & 0.002 & descriptive (uncertified: no select/certify isolation) \\
+CS$^2$ (threshold 0.40) & 1325 & 95 & 21 & 19 & 0.200 & 0.280 & 0.002 & not-certified \\
+Fixed-candidate hindsight oracle & 1325 & 45 & 45 & 0 & 0.000 & N/A & 0.034 & fixed-candidate hindsight oracle (non-deployable: uses ground truth) \\
+RCPS-binary-harm (equivalent bound) & 1325 & 95 & 21 & 19 & 0.200 & 0.280 & 0.002 & not-certified \\
+Matched-random & 1325 & 95 & 3.190 & 2.920 & 0.031 & N/A & 0.000 & descriptive (mean of 200 random-route repeats, seed=20270824) \\
+\bottomrule
+\end{tabular}
+\end{table*}

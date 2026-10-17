@@ -1,0 +1,233 @@
+{
+  "alpha": 0.05,
+  "delta": 0.05,
+  "note": "Pairwise is the preregistered primary score; listwise is secondary; G1-gated is the V1-gated family (Design.md 15.4).",
+  "rows": [
+    {
+      "arm": "G1",
+      "benchmark": "RefCOCO",
+      "certify": {
+        "conditional_harm": 0.4897959183673469,
+        "cp_upper": 0.6153099658152611,
+        "harm_count": 24,
+        "help_count": 8,
+        "n": 1342,
+        "net_accuracy_gain": -0.011922503725782414,
+        "route_count": 49,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.46808510638297873,
+        "cp_upper": 0.5972064005193773,
+        "harm_count": 22,
+        "help_count": 5,
+        "n": 1444,
+        "net_accuracy_gain": -0.011772853185595568,
+        "route_count": 47,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_0.770833"
+    },
+    {
+      "arm": "G1",
+      "benchmark": "RefCOCO+",
+      "certify": {
+        "conditional_harm": 0.47368421052631576,
+        "cp_upper": 0.6799134704112757,
+        "harm_count": 9,
+        "help_count": 3,
+        "n": 1325,
+        "net_accuracy_gain": -0.004528301886792453,
+        "route_count": 19,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.43333333333333335,
+        "cp_upper": 0.5983710526353454,
+        "harm_count": 13,
+        "help_count": 5,
+        "n": 1443,
+        "net_accuracy_gain": -0.005544005544005544,
+        "route_count": 30,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_1.51042"
+    },
+    {
+      "arm": "G1",
+      "benchmark": "RefCOCOg",
+      "certify": {
+        "conditional_harm": 0.48,
+        "cp_upper": 0.6586113365709256,
+        "harm_count": 12,
+        "help_count": 3,
+        "n": 1361,
+        "net_accuracy_gain": -0.006612784717119765,
+        "route_count": 25,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.5789473684210527,
+        "cp_upper": 0.7702790806738374,
+        "harm_count": 11,
+        "help_count": 4,
+        "n": 1463,
+        "net_accuracy_gain": -0.004784688995215311,
+        "route_count": 19,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_1.80833"
+    },
+    {
+      "arm": "G1-listwise",
+      "benchmark": "RefCOCO",
+      "certify": {
+        "conditional_harm": 0.45901639344262296,
+        "cp_upper": 0.5718451395652357,
+        "harm_count": 28,
+        "help_count": 6,
+        "n": 1342,
+        "net_accuracy_gain": -0.01639344262295082,
+        "route_count": 61,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.6,
+        "cp_upper": 0.7395075276408783,
+        "harm_count": 21,
+        "help_count": 3,
+        "n": 1444,
+        "net_accuracy_gain": -0.012465373961218837,
+        "route_count": 35,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_2.8125"
+    },
+    {
+      "arm": "G1-listwise",
+      "benchmark": "RefCOCO+",
+      "certify": {
+        "conditional_harm": 0.46153846153846156,
+        "cp_upper": 0.5841826913929735,
+        "harm_count": 24,
+        "help_count": 2,
+        "n": 1325,
+        "net_accuracy_gain": -0.01660377358490566,
+        "route_count": 52,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.5818181818181818,
+        "cp_upper": 0.6947324606195584,
+        "harm_count": 32,
+        "help_count": 4,
+        "n": 1443,
+        "net_accuracy_gain": -0.019404019404019403,
+        "route_count": 55,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_2.90625"
+    },
+    {
+      "arm": "G1-listwise",
+      "benchmark": "RefCOCOg",
+      "certify": {
+        "conditional_harm": 0.3958333333333333,
+        "cp_upper": 0.5247570204449685,
+        "harm_count": 19,
+        "help_count": 5,
+        "n": 1361,
+        "net_accuracy_gain": -0.010286554004408524,
+        "route_count": 48,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.38333333333333336,
+        "cp_upper": 0.49756666786483755,
+        "harm_count": 23,
+        "help_count": 8,
+        "n": 1463,
+        "net_accuracy_gain": -0.010252904989747095,
+        "route_count": 60,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_3.11875"
+    },
+    {
+      "arm": "G1-gated",
+      "benchmark": "RefCOCO",
+      "certify": {
+        "conditional_harm": 0.07142857142857142,
+        "cp_upper": 0.15604543653726935,
+        "harm_count": 4,
+        "help_count": 1,
+        "n": 1342,
+        "net_accuracy_gain": -0.0022354694485842027,
+        "route_count": 56,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.0,
+        "cp_upper": 0.06884260784039488,
+        "harm_count": 0,
+        "help_count": 0,
+        "n": 1444,
+        "net_accuracy_gain": 0.0,
+        "route_count": 42,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_0.15625_veto_gt_0.05"
+    },
+    {
+      "arm": "G1-gated",
+      "benchmark": "RefCOCO+",
+      "certify": {
+        "conditional_harm": 0.0,
+        "cp_upper": 0.95,
+        "harm_count": 0,
+        "help_count": 0,
+        "n": 1325,
+        "net_accuracy_gain": 0.0,
+        "route_count": 1,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.0,
+        "cp_upper": 0.527129195498412,
+        "harm_count": 0,
+        "help_count": 0,
+        "n": 1443,
+        "net_accuracy_gain": 0.0,
+        "route_count": 4,
+        "status": "not-certified"
+      },
+      "policy": "score_ge_1.51042_veto_gt_0.30"
+    },
+    {
+      "arm": "G1-gated",
+      "benchmark": "RefCOCOg",
+      "certify": {
+        "conditional_harm": 0.05084745762711865,
+        "cp_upper": 0.12620655673085027,
+        "harm_count": 3,
+        "help_count": 3,
+        "n": 1361,
+        "net_accuracy_gain": 0.0,
+        "route_count": 59,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.0,
+        "cp_upper": 0.034630074970687034,
+        "harm_count": 0,
+        "help_count": 0,
+        "n": 1463,
+        "net_accuracy_gain": 0.0,
+        "route_count": 85,
+        "status": "certified"
+      },
+      "policy": "score_ge_1e-06_veto_gt_0.02"
+    }
+  ],
+  "system": "System B (InternVL3-8B-hf)"
+}

@@ -1,0 +1,567 @@
+{
+  "alpha": 0.05,
+  "delta": 0.05,
+  "real_thresholds": [
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "controlled_recalls": [
+    0.0,
+    0.25,
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "controlled_false_vetoes": [
+    0.0,
+    0.1,
+    0.3
+  ],
+  "controlled_repeats": 2000,
+  "benchmarks": {
+    "RefCOCO+": {
+      "frozen_threshold": 0.4,
+      "rows": 4388,
+      "proposed_rows": 1460,
+      "help_rows": 169,
+      "harm_rows": 136,
+      "accuracy_versus_audit": {
+        "certify": {
+          "incumbent_accuracy": 0.8513207547169811,
+          "always_switch": {
+            "n": 1325,
+            "routed": 452,
+            "help": 45,
+            "harm": 42,
+            "route_rate": 0.3411320754716981,
+            "harm_among_routed": 0.09292035398230089,
+            "cp_upper": 0.1185249466398872,
+            "net_gain_pp": 0.22641509433962265
+          },
+          "frozen_policy": {
+            "n": 1325,
+            "routed": 93,
+            "help": 20,
+            "harm": 19,
+            "route_rate": 0.07018867924528302,
+            "harm_among_routed": 0.20430107526881722,
+            "cp_upper": 0.2852010145604561,
+            "net_gain_pp": 0.07547169811320754
+          }
+        },
+        "confirm": {
+          "incumbent_accuracy": 0.8350658350658351,
+          "always_switch": {
+            "n": 1443,
+            "routed": 471,
+            "help": 67,
+            "harm": 46,
+            "route_rate": 0.3264033264033264,
+            "harm_among_routed": 0.09766454352441614,
+            "cp_upper": 0.12315012607001075,
+            "net_gain_pp": 1.4553014553014554
+          },
+          "frozen_policy": {
+            "n": 1443,
+            "routed": 108,
+            "help": 35,
+            "harm": 26,
+            "route_rate": 0.07484407484407485,
+            "harm_among_routed": 0.24074074074074073,
+            "cp_upper": 0.3179920557946272,
+            "net_gain_pp": 0.6237006237006237
+          }
+        }
+      },
+      "risk_coverage_select": {
+        "min_routed_for_summary": 20,
+        "lowest_harm_rate_with_min_routed": 0.08235294117647059,
+        "routed_at_lowest_harm_rate": 425,
+        "lowest_cp_upper_any_threshold": 0.10757913906108861,
+        "routed_at_lowest_cp_upper": 436,
+        "max_route_rate": 0.3290566037735849
+      },
+      "observed_power": {
+        "routed": 93,
+        "harm_rate": 0.20430107526881722,
+        "power_at_observed_rate_and_size": 1.4637192627239168e-08,
+        "power_at_observed_rate_and_10000_routed": 0.0
+      },
+      "real_score_decisions": {
+        "cs2": {
+          "deployed": false,
+          "threshold": null
+        },
+        "ltt_bonferroni": {
+          "deployed": false,
+          "threshold": null
+        },
+        "same_split": {
+          "deployed": false,
+          "threshold": null
+        },
+        "empirical_screen": {
+          "deployed": false,
+          "threshold": null
+        },
+        "calibration_images": {
+          "cs2": {
+            "select": 1325,
+            "certify": 1325
+          },
+          "ltt_bonferroni": {
+            "pooled": 2650
+          }
+        }
+      },
+      "decomposition": [
+        {
+          "split": "select",
+          "threshold": 0.4,
+          "routed": 86,
+          "help": 28,
+          "harm": 12,
+          "decisive_share": 0.46511627906976744,
+          "harmful_share_of_decisive": 0.3,
+          "harm_among_routed": 0.13953488372093023
+        },
+        {
+          "split": "select",
+          "threshold": 0.5,
+          "routed": 66,
+          "help": 26,
+          "harm": 11,
+          "decisive_share": 0.5606060606060606,
+          "harmful_share_of_decisive": 0.2972972972972973,
+          "harm_among_routed": 0.16666666666666666
+        },
+        {
+          "split": "select",
+          "threshold": 0.6,
+          "routed": 52,
+          "help": 22,
+          "harm": 11,
+          "decisive_share": 0.6346153846153846,
+          "harmful_share_of_decisive": 0.3333333333333333,
+          "harm_among_routed": 0.21153846153846154
+        },
+        {
+          "split": "select",
+          "threshold": 0.7,
+          "routed": 42,
+          "help": 19,
+          "harm": 11,
+          "decisive_share": 0.7142857142857143,
+          "harmful_share_of_decisive": 0.36666666666666664,
+          "harm_among_routed": 0.2619047619047619
+        },
+        {
+          "split": "select",
+          "threshold": 0.8,
+          "routed": 36,
+          "help": 16,
+          "harm": 9,
+          "decisive_share": 0.6944444444444444,
+          "harmful_share_of_decisive": 0.36,
+          "harm_among_routed": 0.25
+        },
+        {
+          "split": "select",
+          "threshold": 0.9,
+          "routed": 30,
+          "help": 13,
+          "harm": 9,
+          "decisive_share": 0.7333333333333333,
+          "harmful_share_of_decisive": 0.4090909090909091,
+          "harm_among_routed": 0.3
+        },
+        {
+          "split": "certify",
+          "threshold": 0.4,
+          "routed": 93,
+          "help": 20,
+          "harm": 19,
+          "decisive_share": 0.41935483870967744,
+          "harmful_share_of_decisive": 0.48717948717948717,
+          "harm_among_routed": 0.20430107526881722
+        }
+      ],
+      "min_recall_for_a_truly_safe_policy": {
+        "0.0": 0.785,
+        "0.1": 0.805,
+        "0.3": 0.85
+      }
+    },
+    "RefCOCOg": {
+      "frozen_threshold": 0.6,
+      "rows": 4487,
+      "proposed_rows": 1619,
+      "help_rows": 170,
+      "harm_rows": 144,
+      "accuracy_versus_audit": {
+        "certify": {
+          "incumbent_accuracy": 0.8662747979426892,
+          "always_switch": {
+            "n": 1361,
+            "routed": 490,
+            "help": 47,
+            "harm": 34,
+            "route_rate": 0.3600293901542983,
+            "harm_among_routed": 0.06938775510204082,
+            "cp_upper": 0.09130725702106277,
+            "net_gain_pp": 0.9551800146950772
+          },
+          "frozen_policy": {
+            "n": 1361,
+            "routed": 59,
+            "help": 19,
+            "harm": 10,
+            "route_rate": 0.04335047759000735,
+            "harm_among_routed": 0.1694915254237288,
+            "cp_upper": 0.2705205729823771,
+            "net_gain_pp": 0.6612784717119765
+          }
+        },
+        "confirm": {
+          "incumbent_accuracy": 0.8578263841421736,
+          "always_switch": {
+            "n": 1463,
+            "routed": 543,
+            "help": 65,
+            "harm": 59,
+            "route_rate": 0.37115516062884485,
+            "harm_among_routed": 0.10865561694290976,
+            "cp_upper": 0.13315330424676552,
+            "net_gain_pp": 0.4101161995898838
+          },
+          "frozen_policy": {
+            "n": 1463,
+            "routed": 85,
+            "help": 30,
+            "harm": 21,
+            "route_rate": 0.05809979494190021,
+            "harm_among_routed": 0.24705882352941178,
+            "cp_upper": 0.33593069742063864,
+            "net_gain_pp": 0.6151742993848257
+          }
+        }
+      },
+      "risk_coverage_select": {
+        "min_routed_for_summary": 20,
+        "lowest_harm_rate_with_min_routed": 0.08067940552016985,
+        "routed_at_lowest_harm_rate": 471,
+        "lowest_cp_upper_any_threshold": 0.10440995141937111,
+        "routed_at_lowest_cp_upper": 471,
+        "max_route_rate": 0.346069066862601
+      },
+      "observed_power": {
+        "routed": 59,
+        "harm_rate": 0.1694915254237288,
+        "power_at_observed_rate_and_size": 1.7430106262700087e-05,
+        "power_at_observed_rate_and_10000_routed": 2.8968996566e-314
+      },
+      "real_score_decisions": {
+        "cs2": {
+          "deployed": false,
+          "threshold": null
+        },
+        "ltt_bonferroni": {
+          "deployed": false,
+          "threshold": null
+        },
+        "same_split": {
+          "deployed": false,
+          "threshold": null
+        },
+        "empirical_screen": {
+          "deployed": false,
+          "threshold": null
+        },
+        "calibration_images": {
+          "cs2": {
+            "select": 1361,
+            "certify": 1361
+          },
+          "ltt_bonferroni": {
+            "pooled": 2722
+          }
+        }
+      },
+      "decomposition": [
+        {
+          "split": "select",
+          "threshold": 0.4,
+          "routed": 102,
+          "help": 25,
+          "harm": 22,
+          "decisive_share": 0.46078431372549017,
+          "harmful_share_of_decisive": 0.46808510638297873,
+          "harm_among_routed": 0.21568627450980393
+        },
+        {
+          "split": "select",
+          "threshold": 0.5,
+          "routed": 78,
+          "help": 24,
+          "harm": 17,
+          "decisive_share": 0.5256410256410257,
+          "harmful_share_of_decisive": 0.4146341463414634,
+          "harm_among_routed": 0.21794871794871795
+        },
+        {
+          "split": "select",
+          "threshold": 0.6,
+          "routed": 62,
+          "help": 23,
+          "harm": 15,
+          "decisive_share": 0.6129032258064516,
+          "harmful_share_of_decisive": 0.39473684210526316,
+          "harm_among_routed": 0.24193548387096775
+        },
+        {
+          "split": "select",
+          "threshold": 0.7,
+          "routed": 50,
+          "help": 20,
+          "harm": 14,
+          "decisive_share": 0.68,
+          "harmful_share_of_decisive": 0.4117647058823529,
+          "harm_among_routed": 0.28
+        },
+        {
+          "split": "select",
+          "threshold": 0.8,
+          "routed": 46,
+          "help": 17,
+          "harm": 14,
+          "decisive_share": 0.6739130434782609,
+          "harmful_share_of_decisive": 0.45161290322580644,
+          "harm_among_routed": 0.30434782608695654
+        },
+        {
+          "split": "select",
+          "threshold": 0.9,
+          "routed": 37,
+          "help": 13,
+          "harm": 11,
+          "decisive_share": 0.6486486486486487,
+          "harmful_share_of_decisive": 0.4583333333333333,
+          "harm_among_routed": 0.2972972972972973
+        },
+        {
+          "split": "certify",
+          "threshold": 0.6,
+          "routed": 59,
+          "help": 19,
+          "harm": 10,
+          "decisive_share": 0.4915254237288136,
+          "harmful_share_of_decisive": 0.3448275862068966,
+          "harm_among_routed": 0.1694915254237288
+        }
+      ],
+      "min_recall_for_a_truly_safe_policy": {
+        "0.0": 0.795,
+        "0.1": 0.815,
+        "0.3": 0.86
+      }
+    },
+    "RefCOCO": {
+      "frozen_threshold": 0.4,
+      "rows": 4427,
+      "proposed_rows": 1317,
+      "help_rows": 100,
+      "harm_rows": 55,
+      "accuracy_versus_audit": {
+        "certify": {
+          "incumbent_accuracy": 0.9135618479880775,
+          "always_switch": {
+            "n": 1342,
+            "routed": 397,
+            "help": 29,
+            "harm": 15,
+            "route_rate": 0.29582712369597614,
+            "harm_among_routed": 0.037783375314861464,
+            "cp_upper": 0.05758470167513472,
+            "net_gain_pp": 1.0432190760059612
+          },
+          "frozen_policy": {
+            "n": 1342,
+            "routed": 76,
+            "help": 17,
+            "harm": 6,
+            "route_rate": 0.05663189269746647,
+            "harm_among_routed": 0.07894736842105263,
+            "cp_upper": 0.14987835941745878,
+            "net_gain_pp": 0.819672131147541
+          }
+        },
+        "confirm": {
+          "incumbent_accuracy": 0.9120498614958449,
+          "always_switch": {
+            "n": 1444,
+            "routed": 415,
+            "help": 32,
+            "harm": 18,
+            "route_rate": 0.2873961218836565,
+            "harm_among_routed": 0.043373493975903614,
+            "cp_upper": 0.06364186106011262,
+            "net_gain_pp": 0.9695290858725761
+          },
+          "frozen_policy": {
+            "n": 1444,
+            "routed": 82,
+            "help": 21,
+            "harm": 11,
+            "route_rate": 0.05678670360110803,
+            "harm_among_routed": 0.13414634146341464,
+            "cp_upper": 0.21226285526692182,
+            "net_gain_pp": 0.6925207756232687
+          }
+        }
+      },
+      "risk_coverage_select": {
+        "min_routed_for_summary": 20,
+        "lowest_harm_rate_with_min_routed": 0.041666666666666664,
+        "routed_at_lowest_harm_rate": 384,
+        "lowest_cp_upper_any_threshold": 0.06259860391551486,
+        "routed_at_lowest_cp_upper": 384,
+        "max_route_rate": 0.29806259314456035
+      },
+      "observed_power": {
+        "routed": 76,
+        "harm_rate": 0.07894736842105263,
+        "power_at_observed_rate_and_size": 0.001930269852270637,
+        "power_at_observed_rate_and_10000_routed": 4.714870056081817e-39
+      },
+      "real_score_decisions": {
+        "cs2": {
+          "deployed": false,
+          "threshold": null
+        },
+        "ltt_bonferroni": {
+          "deployed": false,
+          "threshold": null
+        },
+        "same_split": {
+          "deployed": false,
+          "threshold": null
+        },
+        "empirical_screen": {
+          "deployed": false,
+          "threshold": null
+        },
+        "calibration_images": {
+          "cs2": {
+            "select": 1342,
+            "certify": 1342
+          },
+          "ltt_bonferroni": {
+            "pooled": 2684
+          }
+        }
+      },
+      "decomposition": [
+        {
+          "split": "select",
+          "threshold": 0.4,
+          "routed": 68,
+          "help": 16,
+          "harm": 7,
+          "decisive_share": 0.3382352941176471,
+          "harmful_share_of_decisive": 0.30434782608695654,
+          "harm_among_routed": 0.10294117647058823
+        },
+        {
+          "split": "select",
+          "threshold": 0.5,
+          "routed": 44,
+          "help": 14,
+          "harm": 7,
+          "decisive_share": 0.4772727272727273,
+          "harmful_share_of_decisive": 0.3333333333333333,
+          "harm_among_routed": 0.1590909090909091
+        },
+        {
+          "split": "select",
+          "threshold": 0.6,
+          "routed": 34,
+          "help": 11,
+          "harm": 6,
+          "decisive_share": 0.5,
+          "harmful_share_of_decisive": 0.35294117647058826,
+          "harm_among_routed": 0.17647058823529413
+        },
+        {
+          "split": "select",
+          "threshold": 0.7,
+          "routed": 27,
+          "help": 8,
+          "harm": 6,
+          "decisive_share": 0.5185185185185185,
+          "harmful_share_of_decisive": 0.42857142857142855,
+          "harm_among_routed": 0.2222222222222222
+        },
+        {
+          "split": "select",
+          "threshold": 0.8,
+          "routed": 24,
+          "help": 6,
+          "harm": 6,
+          "decisive_share": 0.5,
+          "harmful_share_of_decisive": 0.5,
+          "harm_among_routed": 0.25
+        },
+        {
+          "split": "select",
+          "threshold": 0.9,
+          "routed": 17,
+          "help": 4,
+          "harm": 5,
+          "decisive_share": 0.5294117647058824,
+          "harmful_share_of_decisive": 0.5555555555555556,
+          "harm_among_routed": 0.29411764705882354
+        },
+        {
+          "split": "certify",
+          "threshold": 0.4,
+          "routed": 76,
+          "help": 17,
+          "harm": 6,
+          "decisive_share": 0.3026315789473684,
+          "harmful_share_of_decisive": 0.2608695652173913,
+          "harm_among_routed": 0.07894736842105263
+        }
+      ],
+      "min_recall_for_a_truly_safe_policy": {
+        "0.0": 0.56,
+        "0.1": 0.605,
+        "0.3": 0.695
+      }
+    }
+  },
+  "power": {
+    "min_routed_for_any_certificate": 59,
+    "routed_needed_for_80pct_power": {
+      "0.0": 59,
+      "0.01": 124,
+      "0.02": 234,
+      "0.03": 601
+    }
+  },
+  "controlled_max_unsafe_deploy_rate": {
+    "cs2": 0.016,
+    "empirical_screen": 0.7295,
+    "ltt_bonferroni": 0.005,
+    "same_split": 0.0385
+  }
+}

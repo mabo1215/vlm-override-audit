@@ -1,0 +1,30 @@
+{
+  "expression_column": "expression_id",
+  "images_by_split": {
+    "certify": 1325,
+    "confirm": 1443,
+    "select": 1325,
+    "train": 295
+  },
+  "input_images": 4388,
+  "input_rows": 4700,
+  "input_sha256": "f924f0a34196e74a2fb1e42951677f59c24717cd1f30148b2846ebc016af2338",
+  "output_images": 4388,
+  "output_rows": 4388,
+  "output_sha256": "baaa2e86d524340af023255686f71455dc0d79748180e4821f6af8d314dbda56",
+  "reduced_rows_by_split": {
+    "certify": 1325,
+    "confirm": 1443,
+    "select": 1325,
+    "train": 295
+  },
+  "rows_by_split": {
+    "certify": 1442,
+    "confirm": 1500,
+    "select": 1436,
+    "train": 322
+  },
+  "sampling_unit": "one preselected expression per image",
+  "seed": 20270822,
+  "selection_rule": "minimum SHA-256(seed, split, image_id, expression_id, source_row)"
+}

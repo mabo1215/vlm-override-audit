@@ -1,0 +1,285 @@
+{
+  "allowed_licenses": [
+    4,
+    7,
+    8
+  ],
+  "categories": {
+    "harm": {
+      "candidates": 26,
+      "selected": {
+        "alternative_box": [
+          0.1559431791305542,
+          0.15639734150450907,
+          0.3797327518463135,
+          0.4361514998070988
+        ],
+        "baseline_iou": 0.8626449449439408,
+        "challenger_iou": 0.1292632597004978,
+        "default_box": [
+          0.00625,
+          0.26666666666666666,
+          0.2453125,
+          0.5703703703703704
+        ],
+        "expression": "carrot piece closest to onion",
+        "expression_id": "35989",
+        "file_name": "COCO_train2014_000000162213.jpg",
+        "flickr_licence": "CC BY 2.0",
+        "flickr_owner": "Linda Hartley",
+        "flickr_photo_id": "312077087",
+        "flickr_title": "cut",
+        "flickr_url": "http://farm1.staticflickr.com/111/312077087_a1e10472cf_z.jpg",
+        "gt_box": [
+          0.00446875,
+          0.2658765432098766,
+          0.254609375,
+          0.6023456790123457
+        ],
+        "image_id": 162213,
+        "iou_check": "recomputed IoUs equal the audited record",
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "http://creativecommons.org/licenses/by/2.0/",
+        "score": 0.424998140335083
+      },
+      "skipped_for_license": [
+        {
+          "image_id": 2451,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 267111,
+          "license": 4,
+          "reason": "Flickr page unavailable"
+        },
+        {
+          "image_id": 226329,
+          "license": 2,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 83548,
+          "license": 3,
+          "reason": "COCO licence"
+        }
+      ]
+    },
+    "help": {
+      "candidates": 35,
+      "selected": {
+        "alternative_box": [
+          0.0327753871679306,
+          0.3360269546508789,
+          0.262437105178833,
+          0.8398684819539388
+        ],
+        "baseline_iou": 0.0,
+        "challenger_iou": 0.965124388978479,
+        "default_box": [
+          0.434375,
+          0.3416666666666667,
+          0.5765625,
+          0.7916666666666666
+        ],
+        "expression": "toilet with the seat up",
+        "expression_id": "31652",
+        "file_name": "COCO_train2014_000000215191.jpg",
+        "flickr_licence": "CC BY 2.0",
+        "flickr_owner": "Emanuello Brigant",
+        "flickr_photo_id": "6285390715",
+        "flickr_title": "De gulden middenweg",
+        "flickr_url": "http://farm7.staticflickr.com/6233/6285390715_56d2f27210_z.jpg",
+        "gt_box": [
+          0.03378125,
+          0.3457291666666666,
+          0.263515625,
+          0.8434583333333333
+        ],
+        "image_id": 215191,
+        "iou_check": "recomputed IoUs equal the audited record",
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "http://creativecommons.org/licenses/by/2.0/",
+        "score": 2.1249995827674866
+      },
+      "skipped_for_license": [
+        {
+          "image_id": 306913,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 361316,
+          "license": 5,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 183392,
+          "license": 2,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 417090,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 484369,
+          "license": 1,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 139944,
+          "license": 2,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 331832,
+          "license": 5,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 397358,
+          "license": 2,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 36445,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 301970,
+          "license": 1,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 73413,
+          "license": 1,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 123719,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 203551,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 567287,
+          "license": 1,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 506062,
+          "license": 6,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 424132,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 162993,
+          "license": 5,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 509176,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 2068,
+          "license": 2,
+          "reason": "COCO licence"
+        }
+      ]
+    },
+    "no_route": {
+      "candidates": 1335,
+      "selected": {
+        "alternative_box": [
+          0.2546875,
+          0.4354166666666667,
+          0.44375,
+          0.90625
+        ],
+        "baseline_iou": 0.9681816316828786,
+        "challenger_iou": 0.9681816316828786,
+        "default_box": [
+          0.2546875,
+          0.4354166666666667,
+          0.44375,
+          0.90625
+        ],
+        "expression": "zebra facing us",
+        "expression_id": "17313",
+        "file_name": "COCO_train2014_000000381947.jpg",
+        "flickr_licence": "CC BY 2.0",
+        "flickr_owner": "Paul Williams",
+        "flickr_photo_id": "2147451834",
+        "flickr_title": "Colchester Zoo - Zebras",
+        "flickr_url": "http://farm3.staticflickr.com/2299/2147451834_26525327ae_z.jpg",
+        "gt_box": [
+          0.2561875,
+          0.4426875,
+          0.443265625,
+          0.903375
+        ],
+        "image_id": 381947,
+        "iou_check": "recomputed IoUs equal the audited record",
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "http://creativecommons.org/licenses/by/2.0/",
+        "score": 0.0
+      },
+      "skipped_for_license": [
+        {
+          "image_id": 212641,
+          "license": 2,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 469373,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 171698,
+          "license": 2,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 501814,
+          "license": 4,
+          "reason": "Flickr page incompatible"
+        },
+        {
+          "image_id": 297645,
+          "license": 3,
+          "reason": "COCO licence"
+        },
+        {
+          "image_id": 557582,
+          "license": 1,
+          "reason": "COCO licence"
+        }
+      ]
+    }
+  },
+  "flickr_checks": {
+    "checked_utc": "2026-10-18",
+    "method": "Flickr photo page https://www.flickr.com/photo.gne?id=<photo id>, owner name, title and licence as shown on the page",
+    "rule": "an image is shown only if its COCO licence is 4, 7 or 8 and its Flickr page still exists with a CC BY-compatible licence, so that the creator can be credited"
+  },
+  "record_file": "RefCOCOplus_reduced_seed20270822.csv",
+  "seed": 20270822,
+  "threshold": 0.4
+}

@@ -1,0 +1,176 @@
+{
+  "RefCOCO": {
+    "as_generated": {
+      "certify": {
+        "conditional_harm": 0.07894736842105263,
+        "cp_upper": 0.14987835941745878,
+        "harm_count": 6,
+        "help_count": 17,
+        "incumbent_correct": 1225,
+        "net_accuracy_gain": 0.00819672131147541,
+        "route_count": 76,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.13414634146341464,
+        "cp_upper": 0.21226285526692182,
+        "harm_count": 11,
+        "help_count": 21,
+        "incumbent_correct": 1317,
+        "net_accuracy_gain": 0.006925207756232687,
+        "route_count": 82,
+        "status": "not-certified"
+      },
+      "selected_policy": "score_ge_0.40"
+    },
+    "default_correct_flips": {
+      "certify": 3,
+      "confirm": 4,
+      "select": 4
+    },
+    "frame_corrected": {
+      "certify": {
+        "conditional_harm": 0.07894736842105263,
+        "cp_upper": 0.14987835941745878,
+        "harm_count": 6,
+        "help_count": 17,
+        "incumbent_correct": 1224,
+        "net_accuracy_gain": 0.00819672131147541,
+        "route_count": 76,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.13414634146341464,
+        "cp_upper": 0.21226285526692182,
+        "harm_count": 11,
+        "help_count": 22,
+        "incumbent_correct": 1317,
+        "net_accuracy_gain": 0.007617728531855956,
+        "route_count": 82,
+        "status": "not-certified"
+      },
+      "selected_policy": "score_ge_0.40"
+    },
+    "manifest": "predictions_reduced_seed20270822.csv",
+    "no_switch_rows_corrected": 2964,
+    "out_of_range_rows": 683,
+    "pixel_rows": 4420,
+    "rows": 4427
+  },
+  "RefCOCO+": {
+    "as_generated": {
+      "certify": {
+        "conditional_harm": 0.20430107526881722,
+        "cp_upper": 0.2852010145604561,
+        "harm_count": 19,
+        "help_count": 20,
+        "incumbent_correct": 1127,
+        "net_accuracy_gain": 0.0007547169811320754,
+        "route_count": 93,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.24074074074074073,
+        "cp_upper": 0.3179920557946272,
+        "harm_count": 26,
+        "help_count": 35,
+        "incumbent_correct": 1203,
+        "net_accuracy_gain": 0.006237006237006237,
+        "route_count": 108,
+        "status": "not-certified"
+      },
+      "selected_policy": "score_ge_0.40"
+    },
+    "default_correct_flips": {
+      "certify": 1,
+      "confirm": 7,
+      "select": 6
+    },
+    "frame_corrected": {
+      "certify": {
+        "conditional_harm": 0.20430107526881722,
+        "cp_upper": 0.2852010145604561,
+        "harm_count": 19,
+        "help_count": 20,
+        "incumbent_correct": 1128,
+        "net_accuracy_gain": 0.0007547169811320754,
+        "route_count": 93,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.24074074074074073,
+        "cp_upper": 0.3179920557946272,
+        "harm_count": 26,
+        "help_count": 35,
+        "incumbent_correct": 1206,
+        "net_accuracy_gain": 0.006237006237006237,
+        "route_count": 108,
+        "status": "not-certified"
+      },
+      "selected_policy": "score_ge_0.40"
+    },
+    "manifest": "predictions_one_expression_per_image.csv",
+    "no_switch_rows_corrected": 2804,
+    "out_of_range_rows": 642,
+    "pixel_rows": 4379,
+    "rows": 4388
+  },
+  "RefCOCOg": {
+    "as_generated": {
+      "certify": {
+        "conditional_harm": 0.1694915254237288,
+        "cp_upper": 0.2705205729823771,
+        "harm_count": 10,
+        "help_count": 19,
+        "incumbent_correct": 1176,
+        "net_accuracy_gain": 0.006612784717119765,
+        "route_count": 59,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.24705882352941178,
+        "cp_upper": 0.33593069742063864,
+        "harm_count": 21,
+        "help_count": 30,
+        "incumbent_correct": 1253,
+        "net_accuracy_gain": 0.006151742993848257,
+        "route_count": 85,
+        "status": "not-certified"
+      },
+      "selected_policy": "score_ge_0.60"
+    },
+    "default_correct_flips": {
+      "certify": 3,
+      "confirm": 5,
+      "select": 6
+    },
+    "frame_corrected": {
+      "certify": {
+        "conditional_harm": 0.1694915254237288,
+        "cp_upper": 0.2705205729823771,
+        "harm_count": 10,
+        "help_count": 19,
+        "incumbent_correct": 1177,
+        "net_accuracy_gain": 0.006612784717119765,
+        "route_count": 59,
+        "status": "not-certified"
+      },
+      "confirm": {
+        "conditional_harm": 0.24705882352941178,
+        "cp_upper": 0.33593069742063864,
+        "harm_count": 21,
+        "help_count": 31,
+        "incumbent_correct": 1256,
+        "net_accuracy_gain": 0.00683526999316473,
+        "route_count": 85,
+        "status": "not-certified"
+      },
+      "selected_policy": "score_ge_0.60"
+    },
+    "manifest": "predictions_reduced_seed20270822.csv",
+    "no_switch_rows_corrected": 2746,
+    "out_of_range_rows": 685,
+    "pixel_rows": 4470,
+    "rows": 4487
+  }
+}

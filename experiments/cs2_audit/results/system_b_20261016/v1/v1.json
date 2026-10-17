@@ -1,0 +1,37 @@
+{
+  "calibration_images": 966,
+  "calibration_pairs": 12527,
+  "columns": [
+    "iou_bc",
+    "log_area_ratio",
+    "centre_dx",
+    "centre_dy",
+    "aspect_b",
+    "aspect_c",
+    "border_b",
+    "border_c",
+    "area_b",
+    "area_c",
+    "siglip_sim_b",
+    "siglip_sim_c",
+    "siglip_sim_diff",
+    "clip_sim_b",
+    "clip_sim_c",
+    "clip_sim_diff"
+  ],
+  "cv_auroc": {
+    "hgb_d3_lr0.05": 0.8811223209106579,
+    "hgb_d3_lr0.1": 0.8775614907444105,
+    "hgb_d5_lr0.05": 0.8766589715462871,
+    "hgb_d5_lr0.1": 0.8710937664407348,
+    "logistic_C0.01": 0.8420989463854985,
+    "logistic_C0.1": 0.8419651481629004,
+    "logistic_C1.0": 0.841951863494154
+  },
+  "fit_images": 3862,
+  "fit_pairs": 51126,
+  "harm_rate_fit": 0.800238626139342,
+  "seed": 20271016,
+  "selected_model": "hgb_d3_lr0.05",
+  "sha256": "1b8968ad97022d59a8cc72aaf50b15b5ea3c7e1ec6dc38e9e78166f15d77212b"
+}
