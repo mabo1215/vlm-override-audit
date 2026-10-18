@@ -1,4 +1,4 @@
-"""Join ground truth to System B generation records in the preregistered order.
+"""Join ground truth to System B generation records in the protocol's order.
 
 Generation (``system_b.py``) never reads labels.  This command adds them one
 set at a time and refuses to run out of order (Design.md section 15.2):

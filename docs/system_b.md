@@ -1,4 +1,4 @@
-# System B: preregistration and evidence of order
+# System B: protocol file and evidence of order
 
 System B (InternVL3-8B, Section 4.2 and Table 2 of the paper) was specified
 in full before it was run.  Its protocol file,
@@ -34,6 +34,15 @@ for line in open("experiments/cs2_audit/results/system_b_20261016/label_join_log
     e = json.loads(line)
     print(e["arm"], e["benchmark"], e["stage"], e["utc"], versions.get(e["protocol_sha256"]))
 ```
+
+The protocol file was committed to the authors' own repository, not lodged
+with an independent registry, so its commit times are not third-party
+timestamps.  What the release lets a reader check is the order: each join
+names the protocol version it ran under, and that version shows which
+settings and rules were already fixed.  The protocol file and the results
+written during the run keep their original wording, which calls the scores
+"preregistered": the protocol's SHA-256 is recorded with every join, and
+results are kept as they were produced.
 
 `join_system_b_labels.py` enforces the order (it refuses a join whose
 prerequisites are not committed, and joins each set once); its tests are in

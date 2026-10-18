@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Driver for the preregistered GPU arms G1-G3 (docs/Design.md section 15).
+# Driver for the GPU arms G1-G3 declared in docs/Design.md section 15.
 # Runs on the vGPU 3090 or on the lab host 4c (4x RTX 3090 24 GB, shared
 # with other users; only the GPUs listed in GPUS are used).  Each step is
 # idempotent and resumable:
@@ -23,7 +23,7 @@
 # generation run.  A lock per output file stops a step from running twice.
 #
 # No step reads ground truth except the separate label joins, which are run
-# by hand in the preregistered order (join_system_b_labels.py).
+# by hand in the protocol's order (join_system_b_labels.py).
 set -euo pipefail
 
 case "$(hostname)" in

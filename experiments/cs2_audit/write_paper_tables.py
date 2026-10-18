@@ -290,7 +290,7 @@ def listwise_table(check: dict, seed: str = "20270822") -> str:
 
 
 # ---------------------------------------------------------------------------
-# System B (preregistered second system, trained verifier V1, RefCLEF)
+# System B (second system fixed in a protocol file, trained verifier V1, RefCLEF)
 # ---------------------------------------------------------------------------
 
 SYSTEM_B_DIR = ROOT / "experiments/cs2_audit/results/system_b_20261016"
@@ -358,7 +358,7 @@ def system_b_scores_table(numbers: dict) -> str:
     rows = rows[:-1]
     return (
         "\\begin{table}[H]\n\\begin{adjustwidth}{-\\extralength}{0cm}\n"
-        "\\caption{System B: the selected rules of the preregistered pairwise score\n"
+        "\\caption{System B: the selected rules of the pairwise score\n"
         "(primary) and listwise score (secondary) on the certification and\n"
         "confirmation sets.  In parentheses: certification/confirmation images.\n"
         "$m/h/k$: switches, helps, harms; $L$ and $U$: exact one-sided 95\\% lower and\n"

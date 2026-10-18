@@ -1,6 +1,6 @@
 {
   "version": "2026-10-18",
-  "note": "Audited record files used by every analysis.  System A points to the rebuilt records (results/system_a_records_v2_20261016: scored-default IoU and tie tolerance, review J7/J8); the archived 2026-08 manifests are kept unchanged for reproduction.  Thresholds are the rules frozen on each selection set.  System B (InternVL3-8B-hf, preregistered in configs/system_b_protocol_v1.json) points to its assembled pairwise manifests on the same COCO records (arm G1) and on RefCLEF (arm G3); its listwise and V1-gated audits are in the same folder.",
+  "note": "Audited record files used by every analysis.  System A points to the rebuilt records (results/system_a_records_v2_20261016: scored-default IoU and tie tolerance, review J7/J8); the archived 2026-08 manifests are kept unchanged for reproduction.  Thresholds are the rules frozen on each selection set.  System B (InternVL3-8B-hf, specified in configs/system_b_protocol_v1.json) points to its assembled pairwise manifests on the same COCO records (arm G1) and on RefCLEF (arm G3); its listwise and V1-gated audits are in the same folder.",
   "systems": {
     "System A": {
       "RefCOCO+": {

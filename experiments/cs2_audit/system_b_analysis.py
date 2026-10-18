@@ -12,7 +12,7 @@ Runs after an arm's audits are assembled and never changes a frozen rule:
 * V1 applied to System A: System A's own threshold family gated by the
   frozen V1, run through the same select -> certify -> confirm protocol.
   System A's labels were read before V1 existed, so this is reported as a
-  post hoc check, not as a preregistered result.
+  post hoc check, not as a result fixed in advance.
 """
 
 from __future__ import annotations
